@@ -2,5 +2,10 @@
   height: 200px;
   width: 1000px;
 
-  margin-left: 10%;
+}
+body{
+	background-image: url("images/backLog.gif");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
