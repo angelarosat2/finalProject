@@ -17,6 +17,7 @@ then
 elif [ $respuesta = "n" ]
 then
     last
+    last -f /var/log/wtmp.1
 else
     echo "Opción inválida"
 fi
