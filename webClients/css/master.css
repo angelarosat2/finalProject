@@ -3,16 +3,13 @@
   width: 285px;
 
 }
-body{
-	/*background-image: url("images/LoginBack.gif");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; */
-    background: url("images/gifBack/7.svg"), linear-gradient(rgb(3, 3, 128), rgb(226, 148, 2)) ;
-
+.backLogin{
+    background: url("images/gifBack/7.svg"), linear-gradient(rgb(20, 83, 134), rgb(248, 170, 24)) ;
+    background-size: 117%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    overflow: hidden;
 }
 .login{
   background-color: rgb(207, 134, 61, 0.1);
