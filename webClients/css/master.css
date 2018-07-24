@@ -1,11 +1,27 @@
 .plughtLogo{
-  height: 200px;
-  width: 1000px;
+  height: 100px;
+  width: 285px;
 
 }
 body{
-	background-image: url("images/backLog.gif");
+	/*background-image: url("images/LoginBack.gif");
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center; */
+    background: url("images/gifBack/7.svg"), linear-gradient(rgb(3, 3, 128), rgb(226, 148, 2)) ;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.login{
+  background-color: rgb(207, 134, 61, 0.1);
+  
+  padding: 3%;
+  margin-top: 2%;
+  margin-left: 1%;
+  width: 420px;
+}
+.form-control{
+  width: 300px;
 }
