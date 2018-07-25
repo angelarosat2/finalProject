@@ -24,9 +24,39 @@
   width: 300px;
 }
 
+.btnLogin{
+  display: inline-block;
+    padding: 1em;
+    background-color: rgb(255, 203, 60);
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
 /*PRINCIPAL*/
 
 .plughtLogoNavbar{
   height: 50px;
   width: 150px;
+}
+.navbar{
+  background-color: rgb(245, 243, 153);
+}
+
+a{
+  padding: 21px;
+  font-size: 20px;
+  color: black;
+}
+a:hover { 
+  background-color: rgb(250, 180, 87);
+  text-decoration: none;
 }
