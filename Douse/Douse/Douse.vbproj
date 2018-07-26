@@ -99,10 +99,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Opciones.Designer.vb">
-      <DependentUpon>Opciones.vb</DependentUpon>
+    <Compile Include="frmOpciones.Designer.vb">
+      <DependentUpon>frmOpciones.vb</DependentUpon>
     </Compile>
-    <Compile Include="Opciones.vb">
+    <Compile Include="frmOpciones.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -118,6 +118,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpciones.resx">
+      <DependentUpon>frmOpciones.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
