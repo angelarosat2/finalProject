@@ -85,4 +85,7 @@ Public Class frmOtroPrincipal
 
     Private m_ChildFormNumber As Integer
 
+    Private Sub frmOtroPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

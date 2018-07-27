@@ -32,4 +32,7 @@ Public Class frmLogin
         Return usr = "user01" And pwd = "Password01"
     End Function
 
+    Private Sub frmLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
