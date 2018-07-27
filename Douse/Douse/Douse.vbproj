@@ -72,16 +72,76 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLogin.Designer.vb">
-      <DependentUpon>frmLogin.vb</DependentUpon>
+    <Compile Include="frmAddClient.Designer.vb">
+      <DependentUpon>frmAddClient.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.vb">
+    <Compile Include="frmAddClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUser.Designer.vb">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContratos.Designer.vb">
+      <DependentUpon>frmContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquipos.Designer.vb">
+      <DependentUpon>frmEquipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyClient.Designer.vb">
+      <DependentUpon>frmModifyClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyUser.Designer.vb">
+      <DependentUpon>frmModifyUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyUser.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicios.Designer.vb">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -107,11 +167,41 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.vb</DependentUpon>
+    <EmbeddedResource Include="frmAddClient.resx">
+      <DependentUpon>frmAddClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUser.resx">
+      <DependentUpon>frmAddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContratos.resx">
+      <DependentUpon>frmContratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEquipos.resx">
+      <DependentUpon>frmEquipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyClient.resx">
+      <DependentUpon>frmModifyClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyUser.resx">
+      <DependentUpon>frmModifyUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicios.resx">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
