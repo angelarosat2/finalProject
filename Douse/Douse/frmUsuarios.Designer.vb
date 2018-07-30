@@ -23,10 +23,10 @@ Partial Class frmUsuarios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUsuarios))
-        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
-        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
-        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
-        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
         Me.btnAddUser = New System.Windows.Forms.Button()
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnModifyUser = New System.Windows.Forms.Button()
@@ -74,7 +74,7 @@ Partial Class frmUsuarios
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.document, Me.user, Me.password})
         Me.ListView1.FullRowSelect = True
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
         Me.ListView1.Location = New System.Drawing.Point(12, 79)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(718, 359)

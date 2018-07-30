@@ -36,7 +36,7 @@ Partial Class frmLogin
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(303, 229)
+        Me.txtUser.Location = New System.Drawing.Point(154, 193)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(183, 31)
         Me.txtUser.TabIndex = 1
@@ -44,7 +44,7 @@ Partial Class frmLogin
         'chkRecordar
         '
         Me.chkRecordar.AutoSize = True
-        Me.chkRecordar.Location = New System.Drawing.Point(312, 349)
+        Me.chkRecordar.Location = New System.Drawing.Point(163, 313)
         Me.chkRecordar.Name = "chkRecordar"
         Me.chkRecordar.Size = New System.Drawing.Size(84, 17)
         Me.chkRecordar.TabIndex = 4
@@ -54,7 +54,7 @@ Partial Class frmLogin
         'btnLogin
         '
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(390, 344)
+        Me.btnLogin.Location = New System.Drawing.Point(241, 308)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(84, 26)
         Me.btnLogin.TabIndex = 3
@@ -64,37 +64,36 @@ Partial Class frmLogin
         'lblUser
         '
         Me.lblUser.AutoSize = True
-        Me.lblUser.Font = New System.Drawing.Font("Arial Unicode MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUser.Location = New System.Drawing.Point(232, 231)
+        Me.lblUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUser.Location = New System.Drawing.Point(83, 195)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(54, 28)
+        Me.lblUser.Size = New System.Drawing.Size(54, 25)
         Me.lblUser.TabIndex = 0
         Me.lblUser.Text = "user"
         '
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(303, 285)
+        Me.txtPassword.Location = New System.Drawing.Point(154, 249)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtPassword.Size = New System.Drawing.Size(183, 31)
         Me.txtPassword.TabIndex = 2
-        Me.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Font = New System.Drawing.Font("Arial Unicode MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(182, 287)
+        Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassword.Location = New System.Drawing.Point(33, 251)
         Me.lblPassword.Name = "lblPassword"
-        Me.lblPassword.Size = New System.Drawing.Size(104, 28)
+        Me.lblPassword.Size = New System.Drawing.Size(104, 25)
         Me.lblPassword.TabIndex = 0
         Me.lblPassword.Text = "password"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(237, 70)
+        Me.PictureBox1.Location = New System.Drawing.Point(88, 34)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(231, 115)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -106,7 +105,7 @@ Partial Class frmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(723, 450)
+        Me.ClientSize = New System.Drawing.Size(420, 380)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.txtPassword)
@@ -116,7 +115,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.txtUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frmLogin"
-        Me.Text = "frmLogin"
+        Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
