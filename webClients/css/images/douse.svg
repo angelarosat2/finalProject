@@ -14,7 +14,7 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="douse.svg">
   <defs
      id="defs4" />
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="1126.1805"
-     inkscape:cy="503.14373"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="2483.9133"
+     inkscape:cy="1207.6173"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -41,11 +41,23 @@
     <sodipodi:guide
        position="275.71429,793.92859"
        orientation="1,0"
-       id="guide4184" />
+       id="guide4184"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="663.67023,932.37082"
        orientation="0,1"
-       id="guide4578" />
+       id="guide4578"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2581.3477,654.07366"
+       orientation="0,1"
+       id="guide885"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1863.7315,680.55082"
+       orientation="0,1"
+       id="guide887"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -55,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,64 +77,59 @@
      id="layer1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="77.14286"
        y="346.64792"
-       id="text4136"
-       sodipodi:linespacing="125%"><tspan
+       id="text4136"><tspan
          sodipodi:role="line"
          id="tspan4138"
          x="77.14286"
          y="346.64792"
-         style="-inkscape-font-specification:'Bebas Neue';font-family:'Bebas Neue';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">DOOMTIC</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Bebas Neue';-inkscape-font-specification:'Bebas Neue'">DOOMTIC</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text4140"
        y="386.64792"
        x="77.14286"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"
          y="386.64792"
          x="77.14286"
          id="tspan4142"
          sodipodi:role="line">DOOMTIC</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text4140-3"
        y="424.68042"
        x="71.491478"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Eras Bold ITC';-inkscape-font-specification:'Eras Bold ITC'"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Eras Bold ITC';-inkscape-font-specification:'Eras Bold ITC'"
          y="424.68042"
          x="71.491478"
          id="tspan4142-5"
          sodipodi:role="line">DOOMTIC</tspan></text>
     <text
-       sodipodi:linespacing="125%"
        id="text4140-3-6"
        y="462.63123"
        x="71.871239"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi'"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi'"
          y="462.63123"
          x="71.871239"
          id="tspan4142-5-3"
          sodipodi:role="line">DOOMTIC</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="71.871239"
        y="502.63123"
-       id="text4180"
-       sodipodi:linespacing="125%"><tspan
+       id="text4180"><tspan
          sodipodi:role="line"
          id="tspan4182"
          x="71.871239"
          y="502.63123"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk'">DOOMTIC</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Lemon/Milk';-inkscape-font-specification:'Lemon/Milk'">DOOMTIC</tspan></text>
     <path
        style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:4.80000019;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 382.03801,286.54548 0,45.00001"
@@ -141,17 +148,16 @@
        sodipodi:nodetypes="ccccccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:66.97368622px;line-height:125%;font-family:sans-serif;letter-spacing:2.10098696px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:2.10098696px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="350.71576"
        y="321.84131"
        id="text4211"
-       sodipodi:linespacing="125%"
        transform="scale(0.96493943,1.0363345)"><tspan
          sodipodi:role="line"
          id="tspan4213"
          x="350.71576"
          y="321.84131"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';letter-spacing:2.10098696px"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:66.97368622px;line-height:1.25;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';letter-spacing:2.10098696px"><tspan
    style="letter-spacing:4.3378582px"
    id="tspan4565">D</tspan><tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Franklin Gothic Demi';-inkscape-font-specification:'Franklin Gothic Demi';letter-spacing:-1.88148081px"
@@ -164,16 +170,15 @@
    id="tspan4493">M</tspan>TIC</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:64.47134399px;line-height:106.0000062%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="355.85959"
        y="412.72098"
-       id="text4571"
-       sodipodi:linespacing="106.00001%"><tspan
+       id="text4571"><tspan
          sodipodi:role="line"
          id="tspan4573"
          x="355.85959"
          y="412.72098"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.47134399px;line-height:1.05999994;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
    style="line-height:105.99999428%;letter-spacing:-9.27999973px"
    id="tspan4713">D</tspan>      MTIC</tspan></text>
     <path
@@ -200,16 +205,15 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:58.30819321px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="363.15036"
        y="497.06448"
-       id="text5105"
-       sodipodi:linespacing="125%"><tspan
+       id="text5105"><tspan
          sodipodi:role="line"
          id="tspan5107"
          x="363.15036"
          y="497.06448"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica">DOOMTIC</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.30819321px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica">DOOMTIC</tspan></text>
     <path
        inkscape:connector-curvature="0"
        style="fill:#ffa303;fill-opacity:1;stroke:none;stroke-width:6.80000019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -221,13 +225,12 @@
        style="fill:#ffa303;fill-opacity:1;stroke:none;stroke-width:6.80000019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <text
-       sodipodi:linespacing="125%"
        id="text5113"
        y="557.06445"
        x="363.15036"
-       style="font-style:normal;font-weight:normal;font-size:58.30819321px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#292929;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#292929;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;fill:#292929;fill-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.30819321px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;fill:#292929;fill-opacity:1"
          y="557.06445"
          x="363.15036"
          id="tspan5115"
@@ -244,16 +247,15 @@
        id="path5119" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:65.94470978px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="343.24954"
        y="227.09221"
-       id="text5002"
-       sodipodi:linespacing="125%"><tspan
+       id="text5002"><tspan
          sodipodi:role="line"
          id="tspan5004"
          x="343.24954"
          y="227.09221"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.94470978px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
    style="letter-spacing:4.89919853px"
    id="tspan5156">D</tspan>O<tspan
    style="letter-spacing:5.16165781px"
@@ -275,13 +277,12 @@
        d="m 433.23729,139.53418 -59.2995,33.84248 3.65553,3.2472 56.15169,-31.3219 53.83363,31.82819 2.13239,-4.12274 z"
        style="fill:#ffa303;fill-opacity:1;stroke:#ffa300;stroke-width:4.67187119;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <text
-       sodipodi:linespacing="125%"
        id="text4933"
        y="192.62447"
        x="830.35547"
-       style="font-style:normal;font-weight:normal;font-size:65.94470978px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.94470978px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"
          y="192.62447"
          x="830.35547"
          id="tspan4935"
@@ -290,33 +291,17 @@
    style="letter-spacing:4.89919853px">D</tspan>O-MOTIC</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:65.94470978px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="846.51788"
        y="275.45697"
-       id="text4952"
-       sodipodi:linespacing="125%"><tspan
+       id="text4952"><tspan
          sodipodi:role="line"
          id="tspan4954"
          x="846.51788"
          y="275.45697"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:65.94470978px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica"><tspan
    style="letter-spacing:4.89919853px"
    id="tspan4956">D</tspan>OMTIC</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:215.34162903px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="889.51453"
-       y="651.36212"
-       id="text4964"
-       sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"><tspan
-         sodipodi:role="line"
-         id="tspan4966"
-         x="889.51453"
-         y="651.36212"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica">DOUSE</tspan></text>
     <path
        style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:26.54912567;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 865.99973,490.31538 0,180.5183"
@@ -325,20 +310,94 @@
        inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:202.25019836px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.05625534"
+       x="900.2287"
+       y="870.44794"
+       id="text72"><tspan
+         sodipodi:role="line"
+         id="tspan70"
+         x="900.2287"
+         y="870.44794"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:5.05625534">DOUSE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.29412746px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1.02451062px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="1938.2166"
+       y="28.407965"
+       id="text4964"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="scale(0.9760758,1.0245106)"><tspan
+         sodipodi:role="line"
+         id="tspan4966"
+         x="1938.2166"
+         y="28.407965"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:220.61978149px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:1.02451062px;fill:#1a1a1a;">DOUSE</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4970"
-       d="m 1538.89,485.84348 0,180.51834"
+       d="M 1860.9284,-131.70115 V 48.817194"
        style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:26.54912567;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:none;fill-opacity:1;stroke:#ffa300;stroke-width:23.62940216;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 1188.2039,334.94065 -385.65542,121.51664 25.49249,11.91161 363.70363,-112.27047 403.2992,114.12771 14.8703,-15.12335 z"
+       style="fill:none;fill-opacity:1;stroke:#ffa300;stroke-width:23.7357235;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 2209.6446,-298.11682 -403.5674,122.79674 26.7203,11.95346 376.8955,-112.88093 378.162,112.78843 20.9448,-11.18054 z"
        id="path4972"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:26.54912567;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 2558.2198,-131.70115 V 48.817194"
+       id="path883"
+       inkscape:connector-curvature="0" />
+    <text
+       transform="scale(0.9760758,1.0245106)"
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       id="text907"
+       y="28.407965"
+       x="2821.8569"
+       style="font-style:normal;font-weight:normal;font-size:12.29412746px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.02451062px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:220.61978149px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:1.02451062px;fill:#ffffff;"
+         y="28.407965"
+         x="2821.8569"
+         id="tspan905"
+         sodipodi:role="line">DOUSE</tspan></text>
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:26.54912567;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 2723.4284,-131.70115 V 48.817194"
+       id="path909"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:connector-curvature="0"
+       id="path911"
+       d="m 3072.1446,-298.11682 -403.5674,122.79674 26.7203,11.95346 376.8955,-112.88093 378.162,112.78843 20.9448,-11.18054 z"
+       style="fill:none;fill-opacity:1;stroke:#ffa300;stroke-width:23.7357235;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path913"
+       d="M 3420.7198,-131.70115 V 48.817194"
+       style="fill:#ffa303;fill-opacity:1;fill-rule:evenodd;stroke:#ffa300;stroke-width:26.54912567;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="C:\Users\ADMIN\Documents\GitHub\finalProject\webClients\css\images\douseLogo.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
