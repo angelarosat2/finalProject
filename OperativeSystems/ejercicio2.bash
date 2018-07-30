@@ -1,49 +1,57 @@
 #!/bin/bash
 
-echo "Desea filtrar los logs por fecha? s/n"
+echo "Desea filtrar los login y logouts por fecha? s/n"
 read respuesta
-if [ $respuesta = "S" ]
+
+if [ -z "$respuesta" ]
 then
-	echo "Ingrese dia incial"
-	read dia_inicial
-	
-	echo "Ingrese mes inicial"
-	read mes_inicial
+	echo "Opcion invalida, vuelva a intentarlo"
+	echo " "
+fi
 
-	echo "Ingrese anio inicial"
-	read anio_inicial
+if [[ $respuesta = "s" ]]
+then
 
-	echo "Ingrese dia final"
-	read dia_final
+	echo "Ingrese fecha de inicio (YYYY-MM-DD)"
+	read fecha_inicio
 
-	echo "Ingrese mes final"
-	read mes_final
+	echo "Ingrese fecha final (YYYY-MM-DD)"
+	read fecha_final
 
-	echo "Ingrese anio final"
-	read anio_final
+	if [[ -z "$fecha_inicial" ]] && [[ -z "$fecha_final" ]]
+	then
+		echo "Debe ingresar un rango de fechas"
+	fi
+	if [ -z "$fecha_inicio" ]
+	then
+		last -t $fecha_final
+		last -f /var/log/wtmp.1 $fecha_final
+		echo "-------------------------------------------------------------------------------------------------"
+		echo "----->SOLO INGRESO FECHA FINAL, SE LE MOSTRARAN TODOS LOS LOGIN Y LOGOUT HASTA " $fecha_final "<-----" 
+		echo " "
+	elif [ -z "$fecha_final" ]
+	then
+		last -s $fecha_inicio
+		last -f /var/log/wtmp.1 $fecha_inicio
+		echo "----------------------------------------------------------------------------------------------------"
+		echo "----->SOLO INGRESO FECHA INICIAL, SE LE MOSTRARAN TODOS LOS LOGIN Y LOGOUT DESDE" $fecha_inicio "<-----"
+		echo " "
+	elif [ $fecha_inicio > $fecha_final ]
+	then
+		echo "------------------------------------------------------------------------------------------------"
+		echo "LA FECHA INICIAL ES MAYOR A LA FECHA FINAL O NO SE ENCONTRARON REGISTROS EN ESE RANGO DE FECHAS"
+		echo " "
+	else
+		last -s $fecha_inicial -t $fecha_final
+		last -f /var/log/wtmp.1 -s $fecha_inicial -t $fecha_final
+	fi
 
-	while [ -z "$dia_inicial" ]; do
-		echo "Debe ingresar un dia inicial"
-		read dia_inicial
-	done
-	while [ -z "$mes_inicial" ]; do
-		echo "Debe ingresar mes inicial"
-		read mes_inicial
-	done
-	while [ -z "$anio_inicial" ]; do
-		echo "Debe ingresar un anio inicial"
-		read anio_incial
-	done
-	while [ -z "$dia_final" ]; do
-		echo "Debe ingresar dia final"
-		read dia_final
-	done
-	while [ -z "$mes_final" ]; do
-		echo "Debe ingresar mes final"
-		read mes_final
-	done
-	while [ -z "$anio_final" ]; do
-		echo "Debe ingresar anio final"
-		read anio_final
-	done
-	fecha_inicio.integer = $(date -d "$dia_inicial" "/" "$mes_incial" "/" "$anio_inicial" + "%d+%m+%Y" )
+elif [[ $respuesta = "n" ]]
+then
+	last | more
+	last -f /var/log/wtmp.1 | more
+else 
+	echo "------------------------------------"
+	echo "Opcion invalida, vuelva a intentarlo"
+	echo " "
+fi

@@ -1,6 +1,5 @@
-#Para ejecutar este código debe ingresar: bash ejercicio1.bash
-
 !#/bin/bash 
+
 echo "Desea filtrar los login y logout por nombre de usuario? S/N"
 read respuesta
 
