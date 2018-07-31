@@ -43,7 +43,7 @@ Partial Class frmAddContract
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(82, 42)
+        Me.Label5.Location = New System.Drawing.Point(78, 16)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(270, 42)
         Me.Label5.TabIndex = 40
@@ -54,7 +54,7 @@ Partial Class frmAddContract
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancel.Location = New System.Drawing.Point(148, 360)
+        Me.btnCancel.Location = New System.Drawing.Point(144, 334)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnCancel.Size = New System.Drawing.Size(92, 37)
@@ -67,7 +67,7 @@ Partial Class frmAddContract
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.Image = CType(resources.GetObject("btnUpdate.Image"), System.Drawing.Image)
         Me.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUpdate.Location = New System.Drawing.Point(258, 360)
+        Me.btnUpdate.Location = New System.Drawing.Point(254, 334)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnUpdate.Size = New System.Drawing.Size(87, 37)
@@ -78,7 +78,7 @@ Partial Class frmAddContract
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(195, 105)
+        Me.txtPassword.Location = New System.Drawing.Point(191, 79)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(199, 29)
         Me.txtPassword.TabIndex = 47
@@ -86,7 +86,7 @@ Partial Class frmAddContract
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(195, 237)
+        Me.txtEmail.Location = New System.Drawing.Point(191, 211)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(199, 29)
         Me.txtEmail.TabIndex = 43
@@ -94,7 +94,7 @@ Partial Class frmAddContract
         'txtDocument
         '
         Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(194, 147)
+        Me.txtDocument.Location = New System.Drawing.Point(190, 121)
         Me.txtDocument.Name = "txtDocument"
         Me.txtDocument.Size = New System.Drawing.Size(200, 29)
         Me.txtDocument.TabIndex = 42
@@ -103,7 +103,7 @@ Partial Class frmAddContract
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(41, 105)
+        Me.Label2.Location = New System.Drawing.Point(37, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 25)
         Me.Label2.TabIndex = 48
@@ -113,7 +113,7 @@ Partial Class frmAddContract
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(41, 227)
+        Me.Label3.Location = New System.Drawing.Point(37, 201)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(133, 50)
         Me.Label3.TabIndex = 44
@@ -123,7 +123,7 @@ Partial Class frmAddContract
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 148)
+        Me.Label1.Location = New System.Drawing.Point(37, 122)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(67, 25)
         Me.Label1.TabIndex = 41
@@ -132,7 +132,7 @@ Partial Class frmAddContract
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(195, 192)
+        Me.txtUser.Location = New System.Drawing.Point(191, 166)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(200, 29)
         Me.txtUser.TabIndex = 51
@@ -141,7 +141,7 @@ Partial Class frmAddContract
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(42, 192)
+        Me.Label4.Location = New System.Drawing.Point(38, 166)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 25)
         Me.Label4.TabIndex = 52
@@ -150,7 +150,7 @@ Partial Class frmAddContract
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(195, 289)
+        Me.TextBox1.Location = New System.Drawing.Point(191, 263)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(199, 29)
         Me.TextBox1.TabIndex = 53
@@ -159,7 +159,7 @@ Partial Class frmAddContract
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(40, 289)
+        Me.Label6.Location = New System.Drawing.Point(36, 263)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(155, 25)
         Me.Label6.TabIndex = 54
@@ -171,7 +171,7 @@ Partial Class frmAddContract
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(448, 424)
+        Me.ClientSize = New System.Drawing.Size(434, 394)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtUser)
