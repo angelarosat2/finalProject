@@ -41,7 +41,7 @@ Partial Class frmAddClient
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(262, 59)
+        Me.Label5.Location = New System.Drawing.Point(95, 31)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(215, 42)
         Me.Label5.TabIndex = 29
@@ -49,9 +49,10 @@ Partial Class frmAddClient
         '
         'btnCancel
         '
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancel.Location = New System.Drawing.Point(307, 335)
+        Me.btnCancel.Location = New System.Drawing.Point(140, 307)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnCancel.Size = New System.Drawing.Size(92, 37)
@@ -61,20 +62,21 @@ Partial Class frmAddClient
         '
         'btnUpdate
         '
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.Image = CType(resources.GetObject("btnUpdate.Image"), System.Drawing.Image)
         Me.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUpdate.Location = New System.Drawing.Point(417, 335)
+        Me.btnUpdate.Location = New System.Drawing.Point(250, 307)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnUpdate.Size = New System.Drawing.Size(87, 37)
         Me.btnUpdate.TabIndex = 38
-        Me.btnUpdate.Text = "     Update"
+        Me.btnUpdate.Text = "     Save"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(354, 139)
+        Me.txtPassword.Location = New System.Drawing.Point(187, 111)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(199, 29)
         Me.txtPassword.TabIndex = 36
@@ -82,7 +84,7 @@ Partial Class frmAddClient
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(353, 273)
+        Me.txtUser.Location = New System.Drawing.Point(186, 245)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(200, 29)
         Me.txtUser.TabIndex = 34
@@ -90,7 +92,7 @@ Partial Class frmAddClient
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(354, 227)
+        Me.txtEmail.Location = New System.Drawing.Point(187, 199)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(199, 29)
         Me.txtEmail.TabIndex = 32
@@ -98,7 +100,7 @@ Partial Class frmAddClient
         'txtDocument
         '
         Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(353, 181)
+        Me.txtDocument.Location = New System.Drawing.Point(186, 153)
         Me.txtDocument.Name = "txtDocument"
         Me.txtDocument.Size = New System.Drawing.Size(200, 29)
         Me.txtDocument.TabIndex = 31
@@ -107,7 +109,7 @@ Partial Class frmAddClient
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(200, 139)
+        Me.Label2.Location = New System.Drawing.Point(33, 111)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 25)
         Me.Label2.TabIndex = 37
@@ -117,7 +119,7 @@ Partial Class frmAddClient
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(200, 273)
+        Me.Label4.Location = New System.Drawing.Point(33, 245)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(79, 25)
         Me.Label4.TabIndex = 35
@@ -127,7 +129,7 @@ Partial Class frmAddClient
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(200, 228)
+        Me.Label3.Location = New System.Drawing.Point(33, 200)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(148, 25)
         Me.Label3.TabIndex = 33
@@ -137,7 +139,7 @@ Partial Class frmAddClient
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(200, 182)
+        Me.Label1.Location = New System.Drawing.Point(33, 154)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(67, 25)
         Me.Label1.TabIndex = 30
@@ -148,7 +150,7 @@ Partial Class frmAddClient
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(729, 450)
+        Me.ClientSize = New System.Drawing.Size(437, 387)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnUpdate)

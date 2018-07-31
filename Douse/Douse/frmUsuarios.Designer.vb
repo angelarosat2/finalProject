@@ -23,10 +23,10 @@ Partial Class frmUsuarios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUsuarios))
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
+        Dim ListViewItem9 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
+        Dim ListViewItem10 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
+        Dim ListViewItem11 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
+        Dim ListViewItem12 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
         Me.btnAddUser = New System.Windows.Forms.Button()
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnModifyUser = New System.Windows.Forms.Button()
@@ -35,10 +35,12 @@ Partial Class frmUsuarios
         Me.user = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.password = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnBack = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnAddUser
         '
+        Me.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
         Me.btnAddUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAddUser.Location = New System.Drawing.Point(417, 26)
@@ -50,6 +52,7 @@ Partial Class frmUsuarios
         '
         'btnDeleteUser
         '
+        Me.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), System.Drawing.Image)
         Me.btnDeleteUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDeleteUser.Location = New System.Drawing.Point(508, 26)
@@ -61,6 +64,7 @@ Partial Class frmUsuarios
         '
         'btnModifyUser
         '
+        Me.btnModifyUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnModifyUser.Image = CType(resources.GetObject("btnModifyUser.Image"), System.Drawing.Image)
         Me.btnModifyUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnModifyUser.Location = New System.Drawing.Point(606, 26)
@@ -74,7 +78,7 @@ Partial Class frmUsuarios
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.document, Me.user, Me.password})
         Me.ListView1.FullRowSelect = True
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem9, ListViewItem10, ListViewItem11, ListViewItem12})
         Me.ListView1.Location = New System.Drawing.Point(12, 79)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(718, 359)
@@ -99,6 +103,7 @@ Partial Class frmUsuarios
         '
         'btnBack
         '
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBack.Image = CType(resources.GetObject("btnBack.Image"), System.Drawing.Image)
         Me.btnBack.Location = New System.Drawing.Point(33, 23)
         Me.btnBack.Name = "btnBack"
@@ -106,12 +111,24 @@ Partial Class frmUsuarios
         Me.btnBack.TabIndex = 3
         Me.btnBack.UseVisualStyleBackColor = True
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(184, 22)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(129, 42)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "USERS"
+        '
         'frmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(742, 450)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.btnModifyUser)
@@ -121,6 +138,7 @@ Partial Class frmUsuarios
         Me.Name = "frmUsuarios"
         Me.Text = "frmUsuarios"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -132,4 +150,5 @@ Partial Class frmUsuarios
     Friend WithEvents user As ColumnHeader
     Friend WithEvents password As ColumnHeader
     Friend WithEvents btnBack As Button
+    Friend WithEvents Label5 As Label
 End Class
