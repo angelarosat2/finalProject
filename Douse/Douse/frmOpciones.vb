@@ -12,19 +12,19 @@
     End Sub
 
     Private Sub btnClients_Click(sender As Object, e As EventArgs) Handles btnClients.Click
-        openForm(frmClientes)
+        openForm(frmClients)
     End Sub
 
     Private Sub btnSubscriptions_Click(sender As Object, e As EventArgs) Handles btnSubscriptions.Click
-        openForm(frmContratos)
+        openForm(frmContracts)
     End Sub
 
-    Private Sub btnServices_Click(sender As Object, e As EventArgs) Handles btnServices.Click
-        openForm(frmServicios)
-    End Sub
+    'Private Sub btnServices_Click(sender As Object, e As EventArgs) Handles btnServices.Click
+    '    openForm(frmServices)
+    'End Sub
 
     Private Sub btnEquipos_Click(sender As Object, e As EventArgs) Handles btnEquipos.Click
-        openForm(frmEquipos)
+        openForm(frmDevices)
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click

@@ -1,4 +1,4 @@
-﻿Public Class frmContratos
+﻿Public Class frmContracts
 
     Private Sub openForm(form As Form)
         form.MdiParent = frmPrincipal
@@ -19,4 +19,5 @@
     Private Sub btnDeleteUser_Click(sender As Object, e As EventArgs) Handles btnDeleteUser.Click
         MsgBox("Está seguro que desea eliminar este contrato?", MsgBoxStyle.Exclamation, "Atención!")
     End Sub
+
 End Class

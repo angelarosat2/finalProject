@@ -1,4 +1,4 @@
-﻿Public Class frmClientes
+﻿Public Class frmClients
     Private Sub openForm(form As Form)
         form.MdiParent = frmPrincipal
         form.Dock = DockStyle.Fill

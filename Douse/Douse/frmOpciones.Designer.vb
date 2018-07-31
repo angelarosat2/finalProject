@@ -81,7 +81,7 @@ Partial Class frmOpciones
         Me.btnSubscriptions.Name = "btnSubscriptions"
         Me.btnSubscriptions.Size = New System.Drawing.Size(172, 170)
         Me.btnSubscriptions.TabIndex = 15
-        Me.btnSubscriptions.Text = "Subscriptions"
+        Me.btnSubscriptions.Text = "Contracts"
         Me.btnSubscriptions.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnSubscriptions.UseVisualStyleBackColor = True
         '

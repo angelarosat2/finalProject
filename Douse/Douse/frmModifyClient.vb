@@ -7,14 +7,14 @@
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) 
-        openForm(frmClientes)
+        openForm(frmClients)
         Me.Close()
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) 
         MsgBox("El usuario se ha modificado correctamente", MsgBoxStyle.Information, "Success!")
         Me.Close()
-        openForm(frmClientes)
+        openForm(frmClients)
     End Sub
 
 End Class

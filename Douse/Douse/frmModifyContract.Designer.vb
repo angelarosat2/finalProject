@@ -76,7 +76,7 @@ Partial Class frmModifyContract
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(195, 113)
+        Me.txtPassword.Location = New System.Drawing.Point(201, 108)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(199, 29)
         Me.txtPassword.TabIndex = 58
@@ -84,7 +84,7 @@ Partial Class frmModifyContract
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(194, 247)
+        Me.txtUser.Location = New System.Drawing.Point(200, 247)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(200, 29)
         Me.txtUser.TabIndex = 56
@@ -92,7 +92,7 @@ Partial Class frmModifyContract
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(195, 201)
+        Me.txtEmail.Location = New System.Drawing.Point(201, 197)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(199, 29)
         Me.txtEmail.TabIndex = 54
@@ -100,7 +100,7 @@ Partial Class frmModifyContract
         'txtDocument
         '
         Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(194, 155)
+        Me.txtDocument.Location = New System.Drawing.Point(200, 155)
         Me.txtDocument.Name = "txtDocument"
         Me.txtDocument.Size = New System.Drawing.Size(200, 29)
         Me.txtDocument.TabIndex = 53
@@ -109,41 +109,41 @@ Partial Class frmModifyContract
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(41, 113)
+        Me.Label2.Location = New System.Drawing.Point(37, 96)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 25)
+        Me.Label2.Size = New System.Drawing.Size(107, 50)
         Me.Label2.TabIndex = 59
-        Me.Label2.Text = "Document"
+        Me.Label2.Text = "Client " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Document"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(41, 247)
+        Me.Label4.Location = New System.Drawing.Point(37, 236)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 25)
+        Me.Label4.Size = New System.Drawing.Size(133, 50)
         Me.Label4.TabIndex = 57
-        Me.Label4.Text = "Adress"
+        Me.Label4.Text = "Subscription " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Type"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(41, 202)
+        Me.Label3.Location = New System.Drawing.Point(37, 198)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(148, 25)
+        Me.Label3.Size = New System.Drawing.Size(155, 25)
         Me.Label3.TabIndex = 55
-        Me.Label3.Text = "Phone number"
+        Me.Label3.Text = "Raspberry Pi ID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 156)
+        Me.Label1.Location = New System.Drawing.Point(37, 156)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 25)
+        Me.Label1.Size = New System.Drawing.Size(125, 25)
         Me.Label1.TabIndex = 52
-        Me.Label1.Text = "Name"
+        Me.Label1.Text = "Client Name"
         '
         'frmModifyContract
         '

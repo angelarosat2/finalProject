@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmClientes
+Partial Class frmClients
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,11 +22,11 @@ Partial Class frmClientes
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmClientes))
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmClients))
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "Fernanda Mayer", "Canelones 1162", "091 689 277", "120"}, -1)
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "Levi Brittos", "Canelones 1162", "095 109 991", "154"}, -1)
+        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "Lucas Sanmartino", "Canelones 1162", "094 467 141", "168"}, -1)
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "Angela Rosa", "Canelones 1162", "095 033 690", "195"}, -1)
         Me.btnBack = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Documento = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -37,12 +37,13 @@ Partial Class frmClientes
         Me.btnModifyClient = New System.Windows.Forms.Button()
         Me.btnDeleteClient = New System.Windows.Forms.Button()
         Me.btnAddClient = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnBack
         '
         Me.btnBack.Image = CType(resources.GetObject("btnBack.Image"), System.Drawing.Image)
-        Me.btnBack.Location = New System.Drawing.Point(45, 14)
+        Me.btnBack.Location = New System.Drawing.Point(41, 14)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(46, 41)
         Me.btnBack.TabIndex = 8
@@ -53,7 +54,7 @@ Partial Class frmClientes
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Documento, Me.Nombre, Me.Direccion, Me.Contacto, Me.RaspberryPi})
         Me.ListView1.FullRowSelect = True
         Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
-        Me.ListView1.Location = New System.Drawing.Point(24, 70)
+        Me.ListView1.Location = New System.Drawing.Point(20, 70)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(718, 359)
         Me.ListView1.TabIndex = 4
@@ -89,7 +90,7 @@ Partial Class frmClientes
         '
         Me.btnModifyClient.Image = CType(resources.GetObject("btnModifyClient.Image"), System.Drawing.Image)
         Me.btnModifyClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnModifyClient.Location = New System.Drawing.Point(618, 17)
+        Me.btnModifyClient.Location = New System.Drawing.Point(614, 17)
         Me.btnModifyClient.Name = "btnModifyClient"
         Me.btnModifyClient.Size = New System.Drawing.Size(94, 34)
         Me.btnModifyClient.TabIndex = 7
@@ -100,7 +101,7 @@ Partial Class frmClientes
         '
         Me.btnDeleteClient.Image = CType(resources.GetObject("btnDeleteClient.Image"), System.Drawing.Image)
         Me.btnDeleteClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDeleteClient.Location = New System.Drawing.Point(520, 17)
+        Me.btnDeleteClient.Location = New System.Drawing.Point(516, 17)
         Me.btnDeleteClient.Name = "btnDeleteClient"
         Me.btnDeleteClient.Size = New System.Drawing.Size(92, 34)
         Me.btnDeleteClient.TabIndex = 6
@@ -111,12 +112,23 @@ Partial Class frmClientes
         '
         Me.btnAddClient.Image = CType(resources.GetObject("btnAddClient.Image"), System.Drawing.Image)
         Me.btnAddClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAddClient.Location = New System.Drawing.Point(429, 17)
+        Me.btnAddClient.Location = New System.Drawing.Point(425, 17)
         Me.btnAddClient.Name = "btnAddClient"
         Me.btnAddClient.Size = New System.Drawing.Size(85, 34)
         Me.btnAddClient.TabIndex = 5
         Me.btnAddClient.Text = "     Add client"
         Me.btnAddClient.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(176, 14)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(155, 42)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "CLIENTS"
         '
         'frmClientes
         '
@@ -124,6 +136,7 @@ Partial Class frmClientes
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(759, 450)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.btnModifyClient)
@@ -133,6 +146,7 @@ Partial Class frmClientes
         Me.Name = "frmClientes"
         Me.Text = "frmClientes"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -146,4 +160,5 @@ Partial Class frmClientes
     Friend WithEvents btnModifyClient As Button
     Friend WithEvents btnDeleteClient As Button
     Friend WithEvents btnAddClient As Button
+    Friend WithEvents Label5 As Label
 End Class

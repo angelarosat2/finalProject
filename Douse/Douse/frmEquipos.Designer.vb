@@ -23,20 +23,20 @@ Partial Class frmEquipos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmEquipos))
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
+        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"COM 001", "Yes", "douse001"}, -1)
+        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"COM 002", "Yes", "douse002", ""}, -1)
+        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"COM 003", "No", "douse003", "Levi Brittos"}, -1)
+        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"COM 004", "No", "douse003", "Angela Rosa"}, -1)
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.deviceID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.available = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.devicePassword = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.btnModifyUser = New System.Windows.Forms.Button()
-        Me.btnDeleteUser = New System.Windows.Forms.Button()
-        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.deviceAssignedTo = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.btnModifyUser = New System.Windows.Forms.Button()
+        Me.btnDeleteDevice = New System.Windows.Forms.Button()
+        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label5
@@ -64,7 +64,7 @@ Partial Class frmEquipos
         '
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.deviceID, Me.available, Me.devicePassword, Me.deviceAssignedTo})
         Me.ListView1.FullRowSelect = True
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8})
         Me.ListView1.Location = New System.Drawing.Point(12, 75)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(718, 359)
@@ -80,12 +80,17 @@ Partial Class frmEquipos
         'available
         '
         Me.available.Text = "Available"
-        Me.available.Width = 285
+        Me.available.Width = 171
         '
         'devicePassword
         '
         Me.devicePassword.Text = "Password"
         Me.devicePassword.Width = 302
+        '
+        'deviceAssignedTo
+        '
+        Me.deviceAssignedTo.Text = "Assigned To"
+        Me.deviceAssignedTo.Width = 113
         '
         'btnModifyUser
         '
@@ -99,17 +104,17 @@ Partial Class frmEquipos
         Me.btnModifyUser.Text = "     Modify device"
         Me.btnModifyUser.UseVisualStyleBackColor = True
         '
-        'btnDeleteUser
+        'btnDeleteDevice
         '
-        Me.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnDeleteUser.Image = CType(resources.GetObject("btnDeleteUser.Image"), System.Drawing.Image)
-        Me.btnDeleteUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDeleteUser.Location = New System.Drawing.Point(504, 22)
-        Me.btnDeleteUser.Name = "btnDeleteUser"
-        Me.btnDeleteUser.Size = New System.Drawing.Size(96, 34)
-        Me.btnDeleteUser.TabIndex = 11
-        Me.btnDeleteUser.Text = "     Delete device"
-        Me.btnDeleteUser.UseVisualStyleBackColor = True
+        Me.btnDeleteDevice.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnDeleteDevice.Image = CType(resources.GetObject("btnDeleteDevice.Image"), System.Drawing.Image)
+        Me.btnDeleteDevice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnDeleteDevice.Location = New System.Drawing.Point(504, 22)
+        Me.btnDeleteDevice.Name = "btnDeleteDevice"
+        Me.btnDeleteDevice.Size = New System.Drawing.Size(96, 34)
+        Me.btnDeleteDevice.TabIndex = 11
+        Me.btnDeleteDevice.Text = "     Delete device"
+        Me.btnDeleteDevice.UseVisualStyleBackColor = True
         '
         'btnAddUser
         '
@@ -123,10 +128,6 @@ Partial Class frmEquipos
         Me.btnAddUser.Text = "     Add device"
         Me.btnAddUser.UseVisualStyleBackColor = True
         '
-        'deviceAssignedTo
-        '
-        Me.deviceAssignedTo.Text = "Assigned To"
-        '
         'frmEquipos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -137,7 +138,7 @@ Partial Class frmEquipos
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.btnModifyUser)
-        Me.Controls.Add(Me.btnDeleteUser)
+        Me.Controls.Add(Me.btnDeleteDevice)
         Me.Controls.Add(Me.btnAddUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmEquipos"
@@ -155,6 +156,6 @@ Partial Class frmEquipos
     Friend WithEvents devicePassword As ColumnHeader
     Friend WithEvents deviceAssignedTo As ColumnHeader
     Friend WithEvents btnModifyUser As Button
-    Friend WithEvents btnDeleteUser As Button
+    Friend WithEvents btnDeleteDevice As Button
     Friend WithEvents btnAddUser As Button
 End Class

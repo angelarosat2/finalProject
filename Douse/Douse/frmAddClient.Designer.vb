@@ -70,7 +70,7 @@ Partial Class frmAddClient
         Me.btnUpdate.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnUpdate.Size = New System.Drawing.Size(87, 37)
         Me.btnUpdate.TabIndex = 38
-        Me.btnUpdate.Text = "     Save"
+        Me.btnUpdate.Text = "     Add"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'txtPassword

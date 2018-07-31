@@ -78,6 +78,18 @@
     <Compile Include="frmAddClient.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmAddDevice.Designer.vb">
+      <DependentUpon>frmAddDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevices.Designer.vb">
+      <DependentUpon>frmDevices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevices.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmModifyContract.Designer.vb">
       <DependentUpon>frmModifyContract.vb</DependentUpon>
     </Compile>
@@ -96,28 +108,28 @@
     <Compile Include="frmAddUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmClientes.Designer.vb">
-      <DependentUpon>frmClientes.vb</DependentUpon>
+    <Compile Include="frmClients.Designer.vb">
+      <DependentUpon>frmClients.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmClientes.vb">
+    <Compile Include="frmClients.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmContratos.Designer.vb">
-      <DependentUpon>frmContratos.vb</DependentUpon>
+    <Compile Include="frmContracts.Designer.vb">
+      <DependentUpon>frmContracts.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmContratos.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEquipos.Designer.vb">
-      <DependentUpon>frmEquipos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmEquipos.vb">
+    <Compile Include="frmContracts.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModifyClient.Designer.vb">
       <DependentUpon>frmModifyClient.vb</DependentUpon>
     </Compile>
     <Compile Include="frmModifyClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyDevice.Designer.vb">
+      <DependentUpon>frmModifyDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyDevice.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmModifyUser.Designer.vb">
@@ -179,23 +191,29 @@
     <EmbeddedResource Include="frmAddContract.resx">
       <DependentUpon>frmAddContract.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddDevice.resx">
+      <DependentUpon>frmAddDevice.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddUser.resx">
       <DependentUpon>frmAddUser.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmClientes.resx">
-      <DependentUpon>frmClientes.vb</DependentUpon>
+    <EmbeddedResource Include="frmClients.resx">
+      <DependentUpon>frmClients.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmContratos.resx">
-      <DependentUpon>frmContratos.vb</DependentUpon>
+    <EmbeddedResource Include="frmContracts.resx">
+      <DependentUpon>frmContracts.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEquipos.resx">
-      <DependentUpon>frmEquipos.vb</DependentUpon>
+    <EmbeddedResource Include="frmDevices.resx">
+      <DependentUpon>frmDevices.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifyClient.resx">
       <DependentUpon>frmModifyClient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifyContract.resx">
       <DependentUpon>frmModifyContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyDevice.resx">
+      <DependentUpon>frmModifyDevice.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifyUser.resx">
       <DependentUpon>frmModifyUser.vb</DependentUpon>

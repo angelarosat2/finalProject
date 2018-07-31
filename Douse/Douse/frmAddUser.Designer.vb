@@ -119,7 +119,7 @@ Partial Class frmAddUser
         Me.btnAdd.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnAdd.Size = New System.Drawing.Size(76, 37)
         Me.btnAdd.TabIndex = 5
-        Me.btnAdd.Text = "     Save"
+        Me.btnAdd.Text = "     Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnCancel
