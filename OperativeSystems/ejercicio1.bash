@@ -1,4 +1,5 @@
 #!/bin/bash 
+source ./ejercicio5.bash
 
 echo "Desea filtrar los login y logout por nombre de usuario? S/N"
 read respuesta

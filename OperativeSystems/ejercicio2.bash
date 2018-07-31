@@ -17,7 +17,8 @@ then
 
 	echo "Ingrese fecha final (YYYY-MM-DD)"
 	read fecha_final
-
+	last=$(last -s $fecha_inicial -t $fecha_final | last -f /var/log/wtmp.1 -s $fecha_inicial -t $fecha_final)
+	registro_existe=$(echo $last | grep 'reboot')
 	if [[ -z "$fecha_inicial" ]] && [[ -z "$fecha_final" ]]
 	then
 		print "Debe ingresar un rango de fechas"
@@ -40,6 +41,12 @@ then
 		echo "------------------------------------------------------------------------------------------------"
 		echo "LA FECHA INICIAL ES MAYOR A LA FECHA FINAL O NO SE ENCONTRARON REGISTROS EN ESE RANGO DE FECHAS"
 		echo " "
+	elif [ -z "$registro_existe" ]
+	then
+		echo "-------------------------------------------------------------------------------"
+		echo "NO EXISTEN REGISTROS PARA ESE RANGO DE FECHAS, SE MOSTRARAN TODOS LOS REGISTROS"
+		last | more
+		last -f /var/log/wtmp.1 | more
 	else
 		last -s "$fecha_inicial" -t "$fecha_final" | more
 		last -f /var/log/wtmp.1 -s "$fecha_inicial" -t "$fecha_final" | more
