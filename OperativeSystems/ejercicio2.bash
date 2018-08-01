@@ -1,15 +1,13 @@
 #!/bin/bash
 
-	echo "Desea filtrar los login y logouts por fecha? s/n"
-	read respuesta
+echo "Desea filtrar los login y logouts por fecha? s/n"
+read respuesta
 
 if [ -z "$respuesta" ]
 then
 	echo "Opcion invalida, vuelva a intentarlo"
 	echo " "
-fi
-
-if [[ $respuesta = "s" ]]
+elif [[ $respuesta = "s" ]]
 then
 
 	echo "Ingrese fecha de inicio (YYYY-MM-DD)"
@@ -17,46 +15,57 @@ then
 
 	echo "Ingrese fecha final (YYYY-MM-DD)"
 	read fecha_final
-	last=$(last -s $fecha_inicial -t $fecha_final | last -f /var/log/wtmp.1 -s $fecha_inicial -t $fecha_final)
-	registro_existe=$(echo $last | grep 'reboot')
-	if [[ -z "$fecha_inicial" ]] && [[ -z "$fecha_final" ]]
+	
+	wtmp_files=$(find /var/log/ | grep wtmp)
+	
+	if [ -z "$fecha_final" ] && [ -n "$fecha_inicial" ]
 	then
-		print "Debe ingresar un rango de fechas"
-	elif [[ -z "$fecha_inicial" ]]
+		echo "--->NO INGRESO FECHA FINAL, SE LE MOSTRARAN TODOS LOS REGISTROS DESDE $fecha_inicial <---"
+		for file in $wtmp_files
+		do
+			last -f $wtmp_files -s "$fecha_inicial"
+		done
+	elif [ -z "$fecha_desde" ] && [ -n "$fecha_hasta" ]
 	then
-		last -t $fecha_final
-		last -f /var/log/wtmp.1 $fecha_final
-		echo "-------------------------------------------------------------------------------------------------"
-		echo "----->SOLO INGRESO FECHA FINAL, SE LE MOSTRARAN TODOS LOS LOGIN Y LOGOUT HASTA $fecha_final <-----" 
-		echo " "
-	elif [[ -z "$fecha_final" ]]
+		echo "--->NO SE INGRESO FECHA INICIAL, SE LE MOSTRARAN TODOS LOS REGISTROS HASTA $fecha_final <---"
+		last -t "$fecha_final"
+		for file in $wtmp_files
+		do
+			last -f $wtmp_files -t "$fecha_hasta"
+		done
+	elif [ -z "$fecha_final" ] && [ -z "$fecha_inicial" ]
 	then
-		last -s $fecha_inicial
-		last -f /var/log/wtmp.1 $fecha_inicial
-		echo "----------------------------------------------------------------------------------------------------"
-		echo "----->SOLO INGRESO FECHA INICIAL, SE LE MOSTRARAN TODOS LOS LOGIN Y LOGOUT DESDE $fecha_inicial <-----"
-		echo " "
-	elif [[ $fecha_inicial -ge $fecha_final ]]
-	then
-		echo "------------------------------------------------------------------------------------------------"
-		echo "LA FECHA INICIAL ES MAYOR A LA FECHA FINAL O NO SE ENCONTRARON REGISTROS EN ESE RANGO DE FECHAS"
-		echo " "
-	elif [ -z "$registro_existe" ]
-	then
-		echo "-------------------------------------------------------------------------------"
-		echo "NO EXISTEN REGISTROS PARA ESE RANGO DE FECHAS, SE MOSTRARAN TODOS LOS REGISTROS"
-		last | more
-		last -f /var/log/wtmp.1 | more
-	else
-		last -s "$fecha_inicial" -t "$fecha_final" | more
-		last -f /var/log/wtmp.1 -s "$fecha_inicial" -t "$fecha_final" | more
-	fi
 
-elif [[ $respuesta = "n" ]]
+		echo "--->NO INGRESO NINGUNA FECHA, SE LE MOSTRARAN TODOS LOS REGISTROS <---"
+		for file in $wtmp_final
+		do
+			last
+		done	
+		echo " "
+	elif [ -n "$fecha_final" ] && [ -n "$fecha_inicial" ]
+	then
+		if [[ "$fecha_inicial" < "$fecha_final" ]]
+		then
+			do_last="$(for file in $wtmp_files 
+			do 
+				last -f $wtmp_files -s $fecha_inicial -t $fecha_final 
+			done)"
+			registros=$(echo "${do_last}" | grep 'reboot')
+		
+			if [ -z "$registros" ]
+			then
+				echo "--->NO HAY REGISTROS EN EL RANGO DE FECHAS INGRESADO, <---"
+			else
+				echo "--->SE MOSTRARAN LOS REGISTROS ENTRE LAS FECHAS $fecha_inicial Y $fecha_final <---"
+				echo "$do_last"
+			fi
+		fi
+	else 
+		echo "FORMATO DE FECHAS INCORRECTO"
+	fi
+elif [ $respuesta = "n" ]
 then
 	last | more
-	last -f /var/log/wtmp.1 | more
-else 
-	echo "------------------------------------"
-	print "Opcion invalida, vuelva a intentarlo"
+else
+	echo "OPCION INVALIDA, VUELVA A INTENTARLO"
 fi
