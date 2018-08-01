@@ -11,13 +11,13 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/master.css">
-
     <title>Plught</title>
 </head>
 
@@ -49,16 +49,23 @@
                         </form>
                     </li>
                     <li class="nav-item">
-                        <form>
-                            <button class="btn btnNav" formaction="error.html">
-                                <span class="fas fa-user"></span>
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+                            <form>
+                              <button class="btn btnNav" formaction="error.html">
+                                <span class="fas fa-user-circle"></span>
+                              </button>
+                            </form>
+                          </li>
+                          <li class="nav-item">
+                              <form>
+                                <button class="btn btnNav" formaction="login.html">
+                                  <span class="fas fa-sign-out-alt"></span>
+                                </button>
+                              </form>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
     <div class="enchufe">
         <img class="enchufePng" src="css/images/backgroundEnchufes.png" alt="enchufes">
     </div>
@@ -87,12 +94,12 @@
                     <td>Enchufe bam</td>
                     <td>Enchufe</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
@@ -101,12 +108,12 @@
                     <td>Enchufe bim</td>
                     <td>Enchufe</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
@@ -115,12 +122,12 @@
                     <td>Enchufe bum</td>
                     <td>Enchufe</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
@@ -129,12 +136,12 @@
                     <td>Luz general</td>
                     <td>Luz</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
@@ -143,12 +150,12 @@
                     <td>Luz medio general</td>
                     <td>Luz</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
@@ -157,15 +164,18 @@
                     <td>Luz secundaria</td>
                     <td>Luz</td>
                     <td>
-                        <p class="onoff">OFF</p>
+                        <p class="switchText">OFF</p>
                         <label class="switch">
                             <input type="checkbox" checked>
                             <span class="slider round"></span>
                         </label>
-                        <p class="onoff">ON</p>
+                        <p class="switchText">ON</p>
                     </td>
                     <td>No se puede visualizar el consumo.</td>
                 </tr>
+            </tbody>
+            </table>
+                <button class="btn btnAdd hvr-buzz-out justify-content-center" onclick="sweetAlert('Oops', 'Esta función todavía no está disponible', 'error');" formaction="choice.html">AGREGAR NUEVO ENCHUFE O LUZ</button>
     </div>
     </div>
 </body>

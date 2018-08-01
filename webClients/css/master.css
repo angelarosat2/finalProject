@@ -11,6 +11,7 @@
   background-attachment: fixed;
   background-position: bottom;
   overflow: hidden;
+
 }
 .backChoice{
   background: url("images/backCho.png"), linear-gradient(rgb(11, 25, 105), rgb(248, 170, 24)) ;
@@ -22,31 +23,120 @@
 }
 .login{
   background-color: rgb(207, 134, 61, 0.1);
-
   padding: 3%;
   margin-top: 2%;
   width: 420px;
+  height: 400px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  color: white;
 }
 .form-control{
-  width: 300px;
+  width: 340px;
+  outline: 0;
+  border-width: 0 0 3px;
+  border-color: white;
+  background: transparent;
+  border-radius: 0px;
 }
 
 .btnLogin{
-    padding: 1em;
     background-color: rgb(255, 203, 60);
     text-decoration: none;
     color: black;
-    border-radius: 8px;
+    border-radius: 10px;
     border: none;
     text-align: center;
-    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+    float: right;
     margin: 4px 2px;
     cursor: pointer;
+    width: 340px;
+
 }
 
 .btn:focus,.btn:active {
   outline: none !important;
   box-shadow: none;
+}
+
+.switchText{
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.rememberPwd{
+  float: right;
+}
+
+::placeholder{
+  color: white !important;
+}
+
+input:focus{
+  background-color: transparent !important;
+  color: white !important;
+}
+.form-control:focus {
+  border-color: white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 0 rgba(255, 0, 0, 0);
+}
+
+input{
+  color: white !important;
+}
+
+@-webkit-keyframes autofill {
+  to {
+      color: rgb(255, 255, 255);
+      background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+/*LO SIGUIENTE ES PARA PONER LOS ICONOS DENTRO DEL INPUT DEL FORM DE LOGIN*/
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/*CHOICES*/
+.choices{
+  margin-top: 50px;
+}
+
+.titleChoice{
+  color: white;
+  font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.choiceRooms{
+  width: 200px;
+  height: 200;
+  margin: 0 -20px 5 -20px;
 }
 
 /*PRINCIPAL*/
@@ -86,13 +176,10 @@
   background-color: transparent;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
+  margin-left: 5px;
 }
-  /* a:hover {
-    background-color: rgb(250, 180, 87);
-    text-decoration: none;
-    color: black;
-  } */
-  .btnNav:hover{
+
+.btnNav:hover{
   color: #ffb300;
   text-decoration: none;
 }
@@ -144,10 +231,24 @@
   color: #e6a100;
 }
 
-/*Enchufes*/
-.onoff{
-  display: inline-block;
-  padding-bottom: 10px;
+.btnAdd{
+  width: 500px;
+  text-align: center;
+  background-color: rgb(79, 184, 79);
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.opcion{
+  color: #0f0f0f;
+  text-decoration: none;
+}
+
+.opcion:hover{
+  color: #e6a100;
+  text-decoration: none;
 }
 
 /*ERROR*/
@@ -161,6 +262,15 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   font-size: 50px;
+}
+
+.errorTextWork{
+  float: right;
+  margin-top: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  text-align: left;
 }
 
 /*NECESITO PARA QUE EL TOGGLER SWITCH SEA REDONDO*/
@@ -211,7 +321,7 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
+ 
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
