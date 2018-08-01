@@ -1,0 +1,4 @@
+Buenas!
+
+Este texto es para especificar a cual de todos estos html hay que entrar.
+Usted para un correcto uso de la pagina solo tiene que entrar al archivo login.html
