@@ -1,5 +1,12 @@
 ﻿Public Class frmAddContract
-    Private Sub frmAddContract_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub openForm(form As Form)
+        form.MdiParent = frmPrincipal
+        form.Dock = DockStyle.Fill
+        form.Show()
+    End Sub
 
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Me.Close()
+        openForm(frmDevices)
     End Sub
 End Class

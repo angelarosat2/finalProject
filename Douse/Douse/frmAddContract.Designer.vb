@@ -34,8 +34,8 @@ Partial Class frmAddContract
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label5
@@ -147,14 +147,6 @@ Partial Class frmAddContract
         Me.Label4.TabIndex = 52
         Me.Label4.Text = "Adress"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(191, 280)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(199, 29)
-        Me.TextBox1.TabIndex = 53
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -165,6 +157,16 @@ Partial Class frmAddContract
         Me.Label6.TabIndex = 54
         Me.Label6.Text = "Raspberry Pi ID"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"RPI 527", "RPI 684", "RPI 359", "RPI 238"})
+        Me.ComboBox1.Location = New System.Drawing.Point(190, 277)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(200, 28)
+        Me.ComboBox1.TabIndex = 55
+        '
         'frmAddContract
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -172,7 +174,7 @@ Partial Class frmAddContract
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(434, 394)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.Label4)
@@ -205,6 +207,6 @@ Partial Class frmAddContract
     Friend WithEvents btnUpdate As Button
     Friend WithEvents txtUser As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

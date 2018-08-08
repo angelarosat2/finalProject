@@ -17,4 +17,5 @@
         openForm(frmUsuarios)
         Me.Close()
     End Sub
+
 End Class

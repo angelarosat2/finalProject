@@ -20,4 +20,8 @@
         MsgBox("Está seguro que desea eliminar este contrato?", MsgBoxStyle.Exclamation, "Atención!")
     End Sub
 
+    Private Sub btnModifyContract_Click(sender As Object, e As EventArgs) Handles btnModifyContract.Click
+        Me.Close()
+        openForm(frmModifyContract)
+    End Sub
 End Class

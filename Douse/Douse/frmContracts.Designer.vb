@@ -32,11 +32,11 @@ Partial Class frmContracts
         Me.ClientDocument = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ClientName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.raspberryPi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.SubsciptionType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnModifyContract = New System.Windows.Forms.Button()
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnAddUser = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.SubsciptionType = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'btnBack
@@ -75,6 +75,11 @@ Partial Class frmContracts
         '
         Me.raspberryPi.Text = "Raspberry Pi ID"
         Me.raspberryPi.Width = 86
+        '
+        'SubsciptionType
+        '
+        Me.SubsciptionType.Text = "Subsciption Type"
+        Me.SubsciptionType.Width = 229
         '
         'btnModifyContract
         '
@@ -123,12 +128,7 @@ Partial Class frmContracts
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "CONTRACTS"
         '
-        'SubsciptionType
-        '
-        Me.SubsciptionType.Text = "Subsciption Type"
-        Me.SubsciptionType.Width = 229
-        '
-        'frmContratos
+        'frmContracts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -141,7 +141,7 @@ Partial Class frmContracts
         Me.Controls.Add(Me.btnDeleteUser)
         Me.Controls.Add(Me.btnAddUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frmContratos"
+        Me.Name = "frmContracts"
         Me.Text = "frmContratos"
         Me.ResumeLayout(False)
         Me.PerformLayout()

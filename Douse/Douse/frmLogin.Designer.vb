@@ -44,7 +44,7 @@ Partial Class frmLogin
         'chkRecordar
         '
         Me.chkRecordar.AutoSize = True
-        Me.chkRecordar.Location = New System.Drawing.Point(174, 302)
+        Me.chkRecordar.Location = New System.Drawing.Point(165, 297)
         Me.chkRecordar.Name = "chkRecordar"
         Me.chkRecordar.Size = New System.Drawing.Size(84, 17)
         Me.chkRecordar.TabIndex = 4
@@ -53,8 +53,9 @@ Partial Class frmLogin
         '
         'btnLogin
         '
+        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(252, 297)
+        Me.btnLogin.Location = New System.Drawing.Point(255, 291)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(84, 26)
         Me.btnLogin.TabIndex = 3

@@ -26,14 +26,14 @@ Partial Class frmAddDevice
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtDocument = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label5
@@ -41,7 +41,7 @@ Partial Class frmAddDevice
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(114, 38)
+        Me.Label5.Location = New System.Drawing.Point(104, 40)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(218, 42)
         Me.Label5.TabIndex = 7
@@ -73,38 +73,21 @@ Partial Class frmAddDevice
         Me.btnAdd.Text = "     Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(178, 244)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(167, 29)
-        Me.txtPassword.TabIndex = 14
-        '
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(178, 202)
+        Me.txtUser.Location = New System.Drawing.Point(178, 199)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(167, 29)
-        Me.txtUser.TabIndex = 12
+        Me.txtUser.TabIndex = 3
         '
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(178, 157)
+        Me.txtEmail.Location = New System.Drawing.Point(178, 154)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(167, 29)
-        Me.txtEmail.TabIndex = 10
-        '
-        'txtDocument
-        '
-        Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(178, 111)
-        Me.txtDocument.Name = "txtDocument"
-        Me.txtDocument.Size = New System.Drawing.Size(167, 29)
-        Me.txtDocument.TabIndex = 1
-        Me.txtDocument.Tag = "-.---.--- - -"
+        Me.txtEmail.TabIndex = 2
         '
         'Label2
         '
@@ -146,20 +129,40 @@ Partial Class frmAddDevice
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "Password"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"COM 947", "COM 429", "COM 193", "COM 138"})
+        Me.ComboBox1.Location = New System.Drawing.Point(178, 112)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(167, 28)
+        Me.ComboBox1.TabIndex = 1
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Angela Rosa", "Fernanda Mayer", "Levi Brittos", "Lucas Sanmartino"})
+        Me.ComboBox2.Location = New System.Drawing.Point(178, 242)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(167, 28)
+        Me.ComboBox2.TabIndex = 4
+        '
         'frmAddDevice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(436, 387)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDocument)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -174,12 +177,12 @@ Partial Class frmAddDevice
     Friend WithEvents Label5 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnAdd As Button
-    Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUser As TextBox
     Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtDocument As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
 End Class
