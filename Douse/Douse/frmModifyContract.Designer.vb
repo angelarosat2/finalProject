@@ -26,14 +26,14 @@ Partial Class frmModifyContract
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtDocument = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtRpi = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtClient = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label5
@@ -73,14 +73,6 @@ Partial Class frmModifyContract
         Me.btnUpdate.Text = "     Update"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'txtPassword
-        '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(201, 108)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(199, 29)
-        Me.txtPassword.TabIndex = 58
-        '
         'txtUser
         '
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -89,31 +81,21 @@ Partial Class frmModifyContract
         Me.txtUser.Size = New System.Drawing.Size(200, 29)
         Me.txtUser.TabIndex = 56
         '
-        'txtEmail
+        'txtRpi
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(201, 197)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(199, 29)
-        Me.txtEmail.TabIndex = 54
+        Me.txtRpi.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRpi.Location = New System.Drawing.Point(201, 197)
+        Me.txtRpi.Name = "txtRpi"
+        Me.txtRpi.Size = New System.Drawing.Size(199, 29)
+        Me.txtRpi.TabIndex = 54
         '
-        'txtDocument
+        'txtAddress
         '
-        Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(200, 155)
-        Me.txtDocument.Name = "txtDocument"
-        Me.txtDocument.Size = New System.Drawing.Size(200, 29)
-        Me.txtDocument.TabIndex = 53
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 96)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 50)
-        Me.Label2.TabIndex = 59
-        Me.Label2.Text = "Client " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Document"
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(200, 155)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(200, 29)
+        Me.txtAddress.TabIndex = 53
         '
         'Label4
         '
@@ -141,9 +123,27 @@ Partial Class frmModifyContract
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(37, 156)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 25)
+        Me.Label1.Size = New System.Drawing.Size(79, 25)
         Me.Label1.TabIndex = 52
-        Me.Label1.Text = "Client Name"
+        Me.Label1.Text = "Addres"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(37, 96)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(107, 50)
+        Me.Label2.TabIndex = 59
+        Me.Label2.Text = "Client " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Document"
+        '
+        'txtClient
+        '
+        Me.txtClient.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtClient.Location = New System.Drawing.Point(201, 108)
+        Me.txtClient.Name = "txtClient"
+        Me.txtClient.Size = New System.Drawing.Size(199, 29)
+        Me.txtClient.TabIndex = 58
         '
         'frmModifyContract
         '
@@ -154,10 +154,10 @@ Partial Class frmModifyContract
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnUpdate)
-        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtClient)
         Me.Controls.Add(Me.txtUser)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDocument)
+        Me.Controls.Add(Me.txtRpi)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -174,12 +174,12 @@ Partial Class frmModifyContract
     Friend WithEvents Label5 As Label
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnUpdate As Button
-    Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUser As TextBox
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtDocument As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents txtRpi As TextBox
+    Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtClient As TextBox
 End Class

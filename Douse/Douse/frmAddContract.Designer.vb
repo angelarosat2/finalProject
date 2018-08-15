@@ -26,16 +26,14 @@ Partial Class frmAddContract
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtDocument = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtSubscriptionNumber = New System.Windows.Forms.TextBox()
+        Me.lblClient = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cbxRpi = New System.Windows.Forms.ComboBox()
+        Me.cbxClient = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label5
@@ -54,11 +52,11 @@ Partial Class frmAddContract
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCancel.Location = New System.Drawing.Point(151, 324)
+        Me.btnCancel.Location = New System.Drawing.Point(151, 315)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnCancel.Size = New System.Drawing.Size(92, 37)
-        Me.btnCancel.TabIndex = 50
+        Me.btnCancel.TabIndex = 6
         Me.btnCancel.Text = "     Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -67,105 +65,89 @@ Partial Class frmAddContract
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.Image = CType(resources.GetObject("btnUpdate.Image"), System.Drawing.Image)
         Me.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUpdate.Location = New System.Drawing.Point(261, 324)
+        Me.btnUpdate.Location = New System.Drawing.Point(261, 315)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
         Me.btnUpdate.Size = New System.Drawing.Size(87, 37)
-        Me.btnUpdate.TabIndex = 49
+        Me.btnUpdate.TabIndex = 5
         Me.btnUpdate.Text = "     Add"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'txtPassword
+        'txtSubscriptionNumber
         '
-        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(191, 96)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(199, 29)
-        Me.txtPassword.TabIndex = 47
+        Me.txtSubscriptionNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSubscriptionNumber.Location = New System.Drawing.Point(193, 200)
+        Me.txtSubscriptionNumber.Name = "txtSubscriptionNumber"
+        Me.txtSubscriptionNumber.Size = New System.Drawing.Size(199, 29)
+        Me.txtSubscriptionNumber.TabIndex = 3
         '
-        'txtEmail
+        'lblClient
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(191, 228)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(199, 29)
-        Me.txtEmail.TabIndex = 43
-        '
-        'txtDocument
-        '
-        Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(190, 138)
-        Me.txtDocument.Name = "txtDocument"
-        Me.txtDocument.Size = New System.Drawing.Size(200, 29)
-        Me.txtDocument.TabIndex = 42
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 96)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 25)
-        Me.Label2.TabIndex = 48
-        Me.Label2.Text = "Document"
+        Me.lblClient.AutoSize = True
+        Me.lblClient.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClient.Location = New System.Drawing.Point(31, 119)
+        Me.lblClient.Name = "lblClient"
+        Me.lblClient.Size = New System.Drawing.Size(66, 25)
+        Me.lblClient.TabIndex = 48
+        Me.lblClient.Text = "Client"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(37, 218)
+        Me.Label3.Location = New System.Drawing.Point(31, 190)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(133, 50)
         Me.Label3.TabIndex = 44
         Me.Label3.Text = "Subscription " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "number"
         '
-        'Label1
+        'txtAddress
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(37, 139)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 25)
-        Me.Label1.TabIndex = 41
-        Me.Label1.Text = "Name"
-        '
-        'txtUser
-        '
-        Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUser.Location = New System.Drawing.Point(191, 183)
-        Me.txtUser.Name = "txtUser"
-        Me.txtUser.Size = New System.Drawing.Size(200, 29)
-        Me.txtUser.TabIndex = 51
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(192, 155)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(200, 29)
+        Me.txtAddress.TabIndex = 2
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(38, 183)
+        Me.Label4.Location = New System.Drawing.Point(31, 155)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 25)
+        Me.Label4.Size = New System.Drawing.Size(90, 25)
         Me.Label4.TabIndex = 52
-        Me.Label4.Text = "Adress"
+        Me.Label4.Text = "Address"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(36, 280)
+        Me.Label6.Location = New System.Drawing.Point(31, 252)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(155, 25)
         Me.Label6.TabIndex = 54
         Me.Label6.Text = "Raspberry Pi ID"
         '
-        'ComboBox1
+        'cbxRpi
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"RPI 527", "RPI 684", "RPI 359", "RPI 238"})
-        Me.ComboBox1.Location = New System.Drawing.Point(190, 277)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 28)
-        Me.ComboBox1.TabIndex = 55
+        Me.cbxRpi.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxRpi.FormattingEnabled = True
+        Me.cbxRpi.Items.AddRange(New Object() {"RPI 527", "RPI 684", "RPI 359", "RPI 238"})
+        Me.cbxRpi.Location = New System.Drawing.Point(192, 249)
+        Me.cbxRpi.Name = "cbxRpi"
+        Me.cbxRpi.Size = New System.Drawing.Size(200, 28)
+        Me.cbxRpi.TabIndex = 4
+        '
+        'cbxClient
+        '
+        Me.cbxClient.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbxClient.FormattingEnabled = True
+        Me.cbxClient.Items.AddRange(New Object() {"Fernanda Mayer", "Angela Rosa", "Levi Brittos", "Lucas Sanmartino"})
+        Me.cbxClient.Location = New System.Drawing.Point(192, 116)
+        Me.cbxClient.Name = "cbxClient"
+        Me.cbxClient.Size = New System.Drawing.Size(200, 28)
+        Me.cbxClient.TabIndex = 1
         '
         'frmAddContract
         '
@@ -174,19 +156,17 @@ Partial Class frmAddContract
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(434, 394)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbxClient)
+        Me.Controls.Add(Me.cbxRpi)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtUser)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnUpdate)
-        Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDocument)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtSubscriptionNumber)
+        Me.Controls.Add(Me.lblClient)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAddContract"
@@ -198,15 +178,13 @@ Partial Class frmAddContract
 
     Friend WithEvents Label5 As Label
     Friend WithEvents btnCancel As Button
-    Friend WithEvents txtPassword As TextBox
-    Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtDocument As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents txtSubscriptionNumber As TextBox
+    Friend WithEvents lblClient As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents btnUpdate As Button
-    Friend WithEvents txtUser As TextBox
+    Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cbxRpi As ComboBox
+    Friend WithEvents cbxClient As ComboBox
 End Class
