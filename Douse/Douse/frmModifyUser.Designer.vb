@@ -79,7 +79,7 @@ Partial Class frmModifyUser
         Me.txtPassword.Location = New System.Drawing.Point(186, 247)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(167, 29)
-        Me.txtPassword.TabIndex = 14
+        Me.txtPassword.TabIndex = 4
         '
         'txtUser
         '
@@ -87,7 +87,7 @@ Partial Class frmModifyUser
         Me.txtUser.Location = New System.Drawing.Point(186, 205)
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(167, 29)
-        Me.txtUser.TabIndex = 12
+        Me.txtUser.TabIndex = 3
         '
         'txtEmail
         '
@@ -95,7 +95,7 @@ Partial Class frmModifyUser
         Me.txtEmail.Location = New System.Drawing.Point(186, 160)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(167, 29)
-        Me.txtEmail.TabIndex = 10
+        Me.txtEmail.TabIndex = 2
         '
         'txtDocument
         '
@@ -103,7 +103,7 @@ Partial Class frmModifyUser
         Me.txtDocument.Location = New System.Drawing.Point(186, 114)
         Me.txtDocument.Name = "txtDocument"
         Me.txtDocument.Size = New System.Drawing.Size(167, 29)
-        Me.txtDocument.TabIndex = 9
+        Me.txtDocument.TabIndex = 1
         '
         'Label2
         '
