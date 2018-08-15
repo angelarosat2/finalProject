@@ -85,6 +85,12 @@
     <Compile Include="frmAddDevice.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmControlPanel.Designer.vb">
+      <DependentUpon>frmControlPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDevices.Designer.vb">
       <DependentUpon>frmDevices.vb</DependentUpon>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmContracts.resx">
       <DependentUpon>frmContracts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlPanel.resx">
+      <DependentUpon>frmControlPanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDevices.resx">
       <DependentUpon>frmDevices.vb</DependentUpon>

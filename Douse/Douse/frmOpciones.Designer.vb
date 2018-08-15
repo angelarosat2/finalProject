@@ -100,7 +100,7 @@ Partial Class frmOpciones
         '
         'btnUsers
         '
-        Me.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUsers.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUsers.Image = CType(resources.GetObject("btnUsers.Image"), System.Drawing.Image)
         Me.btnUsers.Location = New System.Drawing.Point(67, 69)

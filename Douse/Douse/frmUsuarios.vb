@@ -25,7 +25,8 @@
         Me.Close()
     End Sub
 
-    Private Sub frmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+        openForm(frmControlPanel)
+        Me.Close()
     End Sub
 End Class
