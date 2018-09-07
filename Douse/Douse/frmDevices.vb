@@ -15,4 +15,6 @@
         Me.Close()
         openForm(frmModifyDevice)
     End Sub
+
+
 End Class
