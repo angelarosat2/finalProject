@@ -244,6 +244,7 @@ input:-webkit-autofill {
 .opcion{
   color: #0f0f0f;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .opcion:hover{
