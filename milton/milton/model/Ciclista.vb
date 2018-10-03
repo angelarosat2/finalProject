@@ -2,7 +2,7 @@
     Inherits Generica
 
     'Atributos de la tabla con los mismos tipo de datos
-    Private ci As Integer
+    Private _ci As Integer
 
 
     Public Sub New()

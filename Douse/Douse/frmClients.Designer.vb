@@ -23,15 +23,12 @@ Partial Class frmClients
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmClients))
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "Fernanda Mayer", "Canelones 1162", "091 689 277", "120"}, -1)
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "Levi Brittos", "Canelones 1162", "095 109 991", "154"}, -1)
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "Lucas Sanmartino", "Canelones 1162", "094 467 141", "168"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "Angela Rosa", "Canelones 1162", "095 033 690", "195"}, -1)
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvwClients = New System.Windows.Forms.ListView()
         Me.Documento = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Direccion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.email = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Contacto = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.RaspberryPi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnModifyClient = New System.Windows.Forms.Button()
@@ -49,17 +46,16 @@ Partial Class frmClients
         Me.btnBack.TabIndex = 8
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'lvwClients
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Documento, Me.Nombre, Me.Direccion, Me.Contacto, Me.RaspberryPi})
-        Me.ListView1.FullRowSelect = True
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
-        Me.ListView1.Location = New System.Drawing.Point(20, 70)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(718, 359)
-        Me.ListView1.TabIndex = 4
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvwClients.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Documento, Me.Nombre, Me.Direccion, Me.email, Me.Contacto, Me.RaspberryPi})
+        Me.lvwClients.FullRowSelect = True
+        Me.lvwClients.Location = New System.Drawing.Point(20, 70)
+        Me.lvwClients.Name = "lvwClients"
+        Me.lvwClients.Size = New System.Drawing.Size(718, 359)
+        Me.lvwClients.TabIndex = 4
+        Me.lvwClients.UseCompatibleStateImageBehavior = False
+        Me.lvwClients.View = System.Windows.Forms.View.Details
         '
         'Documento
         '
@@ -75,6 +71,11 @@ Partial Class frmClients
         '
         Me.Direccion.Text = "Direccion"
         Me.Direccion.Width = 193
+        '
+        'email
+        '
+        Me.email.Text = "Email"
+        Me.email.Width = 113
         '
         'Contacto
         '
@@ -130,7 +131,7 @@ Partial Class frmClients
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "CLIENTS"
         '
-        'frmClientes
+        'frmClients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -138,12 +139,12 @@ Partial Class frmClients
         Me.ClientSize = New System.Drawing.Size(759, 450)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvwClients)
         Me.Controls.Add(Me.btnModifyClient)
         Me.Controls.Add(Me.btnDeleteClient)
         Me.Controls.Add(Me.btnAddClient)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "frmClientes"
+        Me.Name = "frmClients"
         Me.Text = "frmClientes"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -151,7 +152,7 @@ Partial Class frmClients
     End Sub
 
     Friend WithEvents btnBack As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvwClients As ListView
     Friend WithEvents Documento As ColumnHeader
     Friend WithEvents Nombre As ColumnHeader
     Friend WithEvents Direccion As ColumnHeader
@@ -161,4 +162,5 @@ Partial Class frmClients
     Friend WithEvents btnDeleteClient As Button
     Friend WithEvents btnAddClient As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents email As ColumnHeader
 End Class

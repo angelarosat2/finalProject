@@ -1,4 +1,6 @@
-﻿Public Class frmAddClient
+﻿Imports System.Data.SqlClient
+
+Public Class frmAddClient
 
     Private Sub openForm(form As Form)
         form.MdiParent = frmPrincipal
