@@ -30,4 +30,8 @@
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         openForm(frmLogin)
     End Sub
+
+    Private Sub btnServices_Click(sender As Object, e As EventArgs) Handles btnServices.Click
+        openForm(frmSubscription)
+    End Sub
 End Class

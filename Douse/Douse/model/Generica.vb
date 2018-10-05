@@ -11,7 +11,7 @@ Public Class Generica
     Public Overridable Function insertar()
 
         ' generar el insert generico, con los parámetros
-        Dim insertSql As String = ""
+        Dim insertSql As String = "INSERT INTO '" & nomTabla & "' ('" & atributosInsert & ") VALUES (@"
 
         ' y acá tienen que cargar todos los params
 

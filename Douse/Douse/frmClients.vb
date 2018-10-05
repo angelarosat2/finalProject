@@ -41,7 +41,4 @@ Public Class frmClients
         MsgBox("Esta seguro que desea eliminar este cliente?", MsgBoxStyle.Exclamation, "Atention")
     End Sub
 
-    Private Sub lvwClients_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lvwClients.SelectedIndexChanged
-
-    End Sub
 End Class

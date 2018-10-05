@@ -11,7 +11,7 @@ Public NotInheritable Class DBCon
         (Function() New DBCon(), System.Threading.LazyThreadSafetyMode.ExecutionAndPublication)
 
     Private Sub New()
-        myConn = New SqlConnection("Server=fernan-maye-tic\SQLEXPRESS;Database=douse;Trusted_Connection=True;")
+        myConn = New SqlConnection("Server=rosas\SQLEXPRESS;Database=douse;Trusted_Connection=True;")
     End Sub
 
     Public Shared ReadOnly Property Instance() As DBCon

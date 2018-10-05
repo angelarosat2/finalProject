@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmSubscription.Designer.vb">
+      <DependentUpon>frmSubscription.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubscription.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="model\addClient.vb" />
     <Compile Include="model\Client.vb" />
     <Compile Include="model\DBCon.vb" />
@@ -173,6 +179,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="model\Generica.vb" />
+    <Compile Include="model\Subscription.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -234,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubscription.resx">
+      <DependentUpon>frmSubscription.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.vb</DependentUpon>

@@ -8,6 +8,6 @@
     Private _email As String
 
     Public Sub New()
-        MyBase.atributosInsert = {"document", "name", "address", "email"}
+        MyBase.atributosInsert = String.Join(",", "document", "name", "address", "email")
     End Sub
 End Class

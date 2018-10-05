@@ -55,7 +55,7 @@ Partial Class frmOpciones
         Me.btnEquipos.Name = "btnEquipos"
         Me.btnEquipos.Size = New System.Drawing.Size(172, 170)
         Me.btnEquipos.TabIndex = 17
-        Me.btnEquipos.Text = "Equipos"
+        Me.btnEquipos.Text = "Devices"
         Me.btnEquipos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnEquipos.UseVisualStyleBackColor = True
         '

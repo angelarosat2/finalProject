@@ -29,7 +29,7 @@ Partial Class frmClients
         Me.Nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Direccion = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.email = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Contacto = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.phone_number = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.RaspberryPi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnModifyClient = New System.Windows.Forms.Button()
         Me.btnDeleteClient = New System.Windows.Forms.Button()
@@ -48,7 +48,7 @@ Partial Class frmClients
         '
         'lvwClients
         '
-        Me.lvwClients.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Documento, Me.Nombre, Me.Direccion, Me.email, Me.Contacto, Me.RaspberryPi})
+        Me.lvwClients.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.Documento, Me.Nombre, Me.Direccion, Me.email, Me.phone_number, Me.RaspberryPi})
         Me.lvwClients.FullRowSelect = True
         Me.lvwClients.Location = New System.Drawing.Point(20, 70)
         Me.lvwClients.Name = "lvwClients"
@@ -77,10 +77,10 @@ Partial Class frmClients
         Me.email.Text = "Email"
         Me.email.Width = 113
         '
-        'Contacto
+        'phone_number
         '
-        Me.Contacto.Text = "Contacto"
-        Me.Contacto.Width = 162
+        Me.phone_number.Text = "Telefono"
+        Me.phone_number.Width = 162
         '
         'RaspberryPi
         '
@@ -156,7 +156,7 @@ Partial Class frmClients
     Friend WithEvents Documento As ColumnHeader
     Friend WithEvents Nombre As ColumnHeader
     Friend WithEvents Direccion As ColumnHeader
-    Friend WithEvents Contacto As ColumnHeader
+    Friend WithEvents phone_number As ColumnHeader
     Friend WithEvents RaspberryPi As ColumnHeader
     Friend WithEvents btnModifyClient As Button
     Friend WithEvents btnDeleteClient As Button
