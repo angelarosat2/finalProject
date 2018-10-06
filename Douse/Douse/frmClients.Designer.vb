@@ -39,6 +39,7 @@ Partial Class frmClients
         '
         'btnBack
         '
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBack.Image = CType(resources.GetObject("btnBack.Image"), System.Drawing.Image)
         Me.btnBack.Location = New System.Drawing.Point(41, 14)
         Me.btnBack.Name = "btnBack"
@@ -89,6 +90,7 @@ Partial Class frmClients
         '
         'btnModifyClient
         '
+        Me.btnModifyClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModifyClient.Image = CType(resources.GetObject("btnModifyClient.Image"), System.Drawing.Image)
         Me.btnModifyClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnModifyClient.Location = New System.Drawing.Point(614, 17)
@@ -100,6 +102,7 @@ Partial Class frmClients
         '
         'btnDeleteClient
         '
+        Me.btnDeleteClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDeleteClient.Image = CType(resources.GetObject("btnDeleteClient.Image"), System.Drawing.Image)
         Me.btnDeleteClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnDeleteClient.Location = New System.Drawing.Point(516, 17)
@@ -111,6 +114,7 @@ Partial Class frmClients
         '
         'btnAddClient
         '
+        Me.btnAddClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddClient.Image = CType(resources.GetObject("btnAddClient.Image"), System.Drawing.Image)
         Me.btnAddClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAddClient.Location = New System.Drawing.Point(425, 17)
