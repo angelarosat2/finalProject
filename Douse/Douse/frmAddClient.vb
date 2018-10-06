@@ -9,7 +9,13 @@ Public Class frmAddClient
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        MsgBox("El cliente se ha modificado correctamente", MsgBoxStyle.Information, "Success!")
+        ' Los chequeos que los haga mickey
+        Dim oClient As New Client(txtDocument.Text, txtName.Text, txtAddress.Text, txtEmail.Text)
+
+        If oClient.Insertar() = 1 Then
+            MsgBox("El cliente se ha guardado correctamente", MsgBoxStyle.Information, "Success!")
+        End If
+
         Me.Close()
         openForm(frmClients)
     End Sub

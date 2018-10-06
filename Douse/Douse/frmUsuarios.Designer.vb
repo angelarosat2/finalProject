@@ -23,14 +23,10 @@ Partial Class frmUsuarios
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUsuarios))
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.148.618-2", "fmayer", "dousep1"}, -1)
-        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.590.625-1", "lbrittos", "dousep2"}, -1)
-        Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.295.562-9", "lsanmartino", "dousep3"}, -1)
-        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"5.101.056-5", "arosa", "dousep4"}, -1)
         Me.btnAddUser = New System.Windows.Forms.Button()
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnModifyUser = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.lvwUsers = New System.Windows.Forms.ListView()
         Me.document = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.user = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.password = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -74,17 +70,16 @@ Partial Class frmUsuarios
         Me.btnModifyUser.Text = "     Modify user"
         Me.btnModifyUser.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'lvwUsers
         '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.document, Me.user, Me.password})
-        Me.ListView1.FullRowSelect = True
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4})
-        Me.ListView1.Location = New System.Drawing.Point(12, 79)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(718, 359)
-        Me.ListView1.TabIndex = 0
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
+        Me.lvwUsers.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.document, Me.user, Me.password})
+        Me.lvwUsers.FullRowSelect = True
+        Me.lvwUsers.Location = New System.Drawing.Point(12, 79)
+        Me.lvwUsers.Name = "lvwUsers"
+        Me.lvwUsers.Size = New System.Drawing.Size(718, 359)
+        Me.lvwUsers.TabIndex = 0
+        Me.lvwUsers.UseCompatibleStateImageBehavior = False
+        Me.lvwUsers.View = System.Windows.Forms.View.Details
         '
         'document
         '
@@ -130,7 +125,7 @@ Partial Class frmUsuarios
         Me.ClientSize = New System.Drawing.Size(742, 450)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.ListView1)
+        Me.Controls.Add(Me.lvwUsers)
         Me.Controls.Add(Me.btnModifyUser)
         Me.Controls.Add(Me.btnDeleteUser)
         Me.Controls.Add(Me.btnAddUser)
@@ -145,7 +140,7 @@ Partial Class frmUsuarios
     Friend WithEvents btnAddUser As Button
     Friend WithEvents btnDeleteUser As Button
     Friend WithEvents btnModifyUser As Button
-    Friend WithEvents ListView1 As ListView
+    Friend WithEvents lvwUsers As ListView
     Friend WithEvents document As ColumnHeader
     Friend WithEvents user As ColumnHeader
     Friend WithEvents password As ColumnHeader

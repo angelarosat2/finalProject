@@ -4,7 +4,7 @@ Public Class frmClients
     Private Sub frmClients_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim oClient As New Client()
 
-        Dim resultado As SqlDataReader = oClient.obtenerListado()
+        Dim resultado As SqlDataReader = oClient.ObtenerListado()
 
         If resultado.HasRows Then
             While resultado.Read
@@ -14,6 +14,7 @@ Public Class frmClients
                 document.SubItems.Add(resultado("email").ToString)
             End While
         End If
+        resultado.Close()
     End Sub
 
     Private Sub openForm(form As Form)
