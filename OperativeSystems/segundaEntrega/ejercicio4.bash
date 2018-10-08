@@ -6,3 +6,7 @@ then
 else
 	crontab -l
 fi
+
+echo "Presione enter para salir"
+	read salir
+	exit

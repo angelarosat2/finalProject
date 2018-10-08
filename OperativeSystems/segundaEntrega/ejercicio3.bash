@@ -10,7 +10,7 @@ then
 else
 while [ $minuto -gt 59 ]
 do
-	echo "Ingrese un valor entre el rango de 00 a 59, sino presione enter para que la tarea se ejecute cada minuto."
+	echo "Ingrese un valor entre el rango de 00 a 59,sino presione enter para que la tarea se ejecute cada minuto."
 	read minuto
 done
 fi
@@ -91,3 +91,7 @@ crontab -l > newCron &> /dev/null
 echo "$minuto $hora $dia $mes $diaSemana $comando" >> newCron
 crontab newCron
 rm newCron
+
+echo "Presione enter para salir"
+	read salir
+	exit
