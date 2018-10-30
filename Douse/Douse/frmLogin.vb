@@ -9,12 +9,11 @@ Public Class frmLogin
         Dim password As String = txtPassword.Text
 
         If oLogin.login(username, password) Then
-            MsgBox("Yasabes", MsgBoxStyle.Exclamation, "YAS!")
 
             Me.Hide()
             frmPrincipal.Visible = True
         Else
-            MsgBox("eeee aprendete el user", MsgBoxStyle.Exclamation, "Casi")
+            MsgBox("El usuario o la contraseña es incorrecta", MsgBoxStyle.Exclamation, "Algo salio mal...")
         End If
 
 
