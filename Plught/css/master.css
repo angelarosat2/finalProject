@@ -1,35 +1,43 @@
 /*LOGIN*/
 .plughtLogo{
-  height: 100px;
-  width: 285px;
+  height: 280px;
+  width: 275px;
 
 }
 .backLogin{
-  background: url("images/backLog.png"), linear-gradient(rgb(11, 25, 105), rgb(248, 170, 24)) ;
+  background: url("images/backLog2.png");
   background-size: 117%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: bottom;
-  overflow: hidden;
+  background-position: center;
+
 
 }
-.backChoice{
-  background: url("images/backCho.png"), linear-gradient(rgb(11, 25, 105), rgb(248, 170, 24)) ;
-  background-size: 117%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  overflow: hidden;
-}
+
 .login{
-  background-color: rgb(207, 134, 61, 0.1);
-  padding: 3%;
+  background: linear-gradient(150deg, #ffffff, #ffd400);
+  padding: 1%;
   margin-top: 2%;
   width: 420px;
-  height: 400px;
+  height: 600px;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
   color: white;
+  border-radius: 8%;
+  box-shadow: 10;
+}
+
+#loginForm{
+  margin-left: 8%;
+  margin-top: 4%;
+}
+.form-control.error{
+  width: 340px;
+  outline: 0;
+  border-width: 0 0 3px;
+  border-color: red;
+  background: transparent;
+  border-radius: 0px;
 }
 .form-control{
   width: 340px;
@@ -39,14 +47,19 @@
   background: transparent;
   border-radius: 0px;
 }
+#errorMsg{
+  color: red;
+}
+
+
 
 .btnLogin{
     background-color: rgb(255, 203, 60);
     text-decoration: none;
-    color: black;
+    color: white;
     border-radius: 10px;
     border: none;
-    text-align: center;
+    margin-right: 6% !important;
     font-size: 25px;
     font-weight: 400;
     float: right;
@@ -67,7 +80,8 @@
 }
 
 .rememberPwd{
-  float: right;
+  float: left;
+  margin-left: 1%;
 }
 
 ::placeholder{

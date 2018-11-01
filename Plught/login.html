@@ -27,28 +27,35 @@
     <div class="logo d-flex justify-content-center">
       <img src="css/images/plughtLogoWhite.png" alt="plughtLogo" class="plughtLogo">
     </div>
-    <form>
+    <form id="loginForm">
       <div class="form-group inner-addon left-addon">
         <i class="fas fa-user glyphicon"></i>
-        <input type="username" class="form-control" id="inputUsername" aria-describedby="usernameHelp" placeholder="Nombre de usuario">
+        <input type="username" class="form-control" id="usernameInput" placeholder="Nombre de usuario" name="user">
       </div>
       <div class="form-group inner-addon left-addon">
         <i class="fas fa-key glyphicon"></i>
-        <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+        <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
       </div>
       <div class="rememberPwd justify-content-flex-end">
-        <p class="switchText">Recordar contraseña</p>
+        
         <label class="switch">
           <input type="checkbox">
           <span class="slider round"></span>
         </label>
+        <p class="switchText">Recordar contraseña</p>
       </div>
-      <button class="btn btnLogin hvr-shutter-out-horizontal justify-content-center" formaction="choice.html">Iniciar sesion</button>
+      <p id="errorMsg"></p>
+      <button class="btn btnLogin hvr-shutter-out-horizontal justify-content-center" formaction="indexHome.html">Iniciar sesion</button>
     </form>
 
 
 
   </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
 </body>
 
 </html>

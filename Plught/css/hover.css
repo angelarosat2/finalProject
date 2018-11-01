@@ -1805,6 +1805,7 @@
   transition-duration: 0.3s;
   border: none;
   border-radius: 8px;
+  color: white;
 }
 .hvr-shutter-out-horizontal:before {
   content: "";
@@ -1827,9 +1828,10 @@
   transition-timing-function: ease-out;
   border: none;
   border-radius: 8px;
+  color: white;
 }
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
-  color: black;
+  color: white !important;
 }
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   -webkit-transform: scaleX(1);
