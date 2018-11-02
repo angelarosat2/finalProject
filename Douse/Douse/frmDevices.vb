@@ -16,5 +16,7 @@
         openForm(frmModifyDevice)
     End Sub
 
+    Private Sub frmDevices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

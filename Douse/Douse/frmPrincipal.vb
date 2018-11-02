@@ -9,7 +9,7 @@
     End Sub
 
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        openForm(frmOpciones)
+        openForm(frmLogin)
     End Sub
 
     Private Sub btnUsuario_Click(sender As Object, e As EventArgs) Handles btnUsuario.Click
