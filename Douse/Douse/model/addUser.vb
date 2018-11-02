@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
+Public Class addUser
 
-Public Class Login
     Inherits Generica
 
     Private _document As Integer
@@ -44,4 +44,5 @@ Public Class Login
             _username = value
         End Set
     End Property
+
 End Class

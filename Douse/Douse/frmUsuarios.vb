@@ -39,10 +39,9 @@ Public Class frmUsuarios
 
         If resultado.HasRows Then
             While resultado.Read
-                Dim document As ListViewItem = lvwUsers.Items.Add(resultado("document_employees").ToString)
+                Dim document As ListViewItem = lvwUsers.Items.Add(resultado("document").ToString)
                 document.SubItems.Add(resultado("username").ToString)
-                document.SubItems.Add(resultado("email").ToString)
-                document.SubItems.Add(resultado("password").ToString)
+
             End While
         End If
         resultado.Close()

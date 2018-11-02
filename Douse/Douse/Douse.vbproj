@@ -79,6 +79,7 @@
     <Compile Include="frmSubscription.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="model\addUser.vb" />
     <Compile Include="model\Client.vb" />
     <Compile Include="model\DBConn.vb" />
     <Compile Include="frmAddClient.Designer.vb">

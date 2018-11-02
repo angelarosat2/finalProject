@@ -114,7 +114,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.chkRecordar)
         Me.Controls.Add(Me.txtUser)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmLogin"
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

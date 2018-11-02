@@ -2,6 +2,14 @@
 
 Public Class frmLogin
 
+    Private Sub openForm(form As Form)
+        form.MdiParent = frmPrincipal
+        'closeForms(form)
+        'Adapta el form children con el padre
+        form.Dock = DockStyle.Fill
+        form.Show()
+    End Sub
+
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Dim oLogin As New Login()
 
@@ -11,7 +19,8 @@ Public Class frmLogin
         If oLogin.login(username, password) Then
 
             Me.Hide()
-            frmPrincipal.Visible = True
+            'frmPrincipal.Visible = True
+            openForm(frmOpciones)
         Else
             MsgBox("El usuario o la contraseña es incorrecta", MsgBoxStyle.Exclamation, "Algo salio mal...")
         End If

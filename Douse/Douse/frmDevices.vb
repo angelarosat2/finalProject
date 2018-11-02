@@ -16,7 +16,9 @@
         openForm(frmModifyDevice)
     End Sub
 
-    Private Sub frmDevices_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        openForm(frmOpciones)
+        Me.Close()
     End Sub
 End Class
