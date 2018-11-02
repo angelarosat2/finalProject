@@ -8,7 +8,14 @@
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        Dim email As String = txtEmail.Text
+        Dim username As String = txtUser.Text
+        Dim password As String = txtPassword.Text
+        Dim usuario As Usuarios = New Usuarios(username, email, password)
+
+        usuario.editar("email", txtEmail.Text)
         MsgBox("Se ha modificado el usuario correctamente", MsgBoxStyle.Information, "Success!")
+
         Me.Close()
         openForm(frmUsuarios)
     End Sub

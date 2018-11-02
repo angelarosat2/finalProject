@@ -19,6 +19,13 @@ Public Class frmUsuarios
     End Sub
 
     Private Sub btnModifyUser_Click(sender As Object, e As EventArgs) Handles btnModifyUser.Click
+        Dim email As String = lvwUsers.SelectedItems(0).Text
+        Dim username As String = lvwUsers.SelectedItems(0).SubItems(1).Text
+        Dim password As String = lvwUsers.SelectedItems(0).SubItems(2).Text
+        frmModifyUser.txtEmail.Text = email
+        frmModifyUser.txtPassword.Text = password
+        frmModifyUser.txtUser.Text = username
+
         openForm(frmModifyUser)
     End Sub
 
@@ -39,9 +46,9 @@ Public Class frmUsuarios
 
         If resultado.HasRows Then
             While resultado.Read
-                Dim document As ListViewItem = lvwUsers.Items.Add(resultado("document").ToString)
+                Dim document As ListViewItem = lvwUsers.Items.Add(resultado("email").ToString)
                 document.SubItems.Add(resultado("username").ToString)
-
+                document.SubItems.Add(resultado("password").ToString)
             End While
         End If
         resultado.Close()

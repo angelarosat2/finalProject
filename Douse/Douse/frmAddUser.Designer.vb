@@ -23,11 +23,9 @@ Partial Class frmAddUser
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAddUser))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtDocument = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
@@ -35,16 +33,6 @@ Partial Class frmAddUser
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(65, 111)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Document"
         '
         'Label3
         '
@@ -75,15 +63,6 @@ Partial Class frmAddUser
         Me.Label2.Size = New System.Drawing.Size(104, 25)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Password"
-        '
-        'txtDocument
-        '
-        Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(178, 110)
-        Me.txtDocument.Name = "txtDocument"
-        Me.txtDocument.Size = New System.Drawing.Size(167, 29)
-        Me.txtDocument.TabIndex = 1
-        Me.txtDocument.Tag = "-.---.--- - -"
         '
         'txtEmail
         '
@@ -158,11 +137,9 @@ Partial Class frmAddUser
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDocument)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAddUser"
         Me.Tag = ""
@@ -171,12 +148,9 @@ Partial Class frmAddUser
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtDocument As TextBox
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtUser As TextBox
     Friend WithEvents txtPassword As TextBox

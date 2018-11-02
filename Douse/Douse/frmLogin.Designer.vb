@@ -40,6 +40,7 @@ Partial Class frmLogin
         Me.txtUser.Name = "txtUser"
         Me.txtUser.Size = New System.Drawing.Size(183, 31)
         Me.txtUser.TabIndex = 1
+        Me.txtUser.Text = "ppereyra"
         '
         'chkRecordar
         '
@@ -80,6 +81,7 @@ Partial Class frmLogin
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.txtPassword.Size = New System.Drawing.Size(183, 31)
         Me.txtPassword.TabIndex = 2
+        Me.txtPassword.Text = "p3r3yr4"
         '
         'lblPassword
         '

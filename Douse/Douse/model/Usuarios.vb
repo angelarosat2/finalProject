@@ -10,8 +10,7 @@
         Initialize()
     End Sub
 
-    Public Sub New(document As Integer, username As String, email As String, password As String)
-        Me.Document_employees = _document_employees
+    Public Sub New(username As String, email As String, password As String)
         Me.Username = username
         Me.Email = email
         Me.Password = password
@@ -20,7 +19,8 @@
     End Sub
 
     Public Sub Initialize()
-        MyBase.nomTabla = "user_employees"
+        MyBase.nomTabla = "username"
+        MyBase.atributosInsert = {"Username", "Email", "Password"}
     End Sub
 
     Public Property Username As String
@@ -50,12 +50,4 @@
         End Set
     End Property
 
-    Public Property Document_employees As Integer
-        Get
-            Return _document_employees
-        End Get
-        Set(value As Integer)
-            _document_employees = value
-        End Set
-    End Property
 End Class

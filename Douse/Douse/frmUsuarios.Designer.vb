@@ -27,11 +27,11 @@ Partial Class frmUsuarios
         Me.btnDeleteUser = New System.Windows.Forms.Button()
         Me.btnModifyUser = New System.Windows.Forms.Button()
         Me.lvwUsers = New System.Windows.Forms.ListView()
-        Me.document = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.email = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.user = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.password = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.btnBack = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.password = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'btnAddUser
@@ -72,7 +72,7 @@ Partial Class frmUsuarios
         '
         'lvwUsers
         '
-        Me.lvwUsers.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.document, Me.user, Me.password})
+        Me.lvwUsers.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.email, Me.user, Me.password})
         Me.lvwUsers.FullRowSelect = True
         Me.lvwUsers.Location = New System.Drawing.Point(12, 79)
         Me.lvwUsers.Name = "lvwUsers"
@@ -81,20 +81,15 @@ Partial Class frmUsuarios
         Me.lvwUsers.UseCompatibleStateImageBehavior = False
         Me.lvwUsers.View = System.Windows.Forms.View.Details
         '
-        'document
+        'email
         '
-        Me.document.Text = "document"
-        Me.document.Width = 124
+        Me.email.Text = "email"
+        Me.email.Width = 124
         '
         'user
         '
         Me.user.Text = "user"
         Me.user.Width = 285
-        '
-        'password
-        '
-        Me.password.Text = "password"
-        Me.password.Width = 302
         '
         'btnBack
         '
@@ -117,6 +112,10 @@ Partial Class frmUsuarios
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "USERS"
         '
+        'password
+        '
+        Me.password.Text = "password"
+        '
         'frmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -131,7 +130,7 @@ Partial Class frmUsuarios
         Me.Controls.Add(Me.btnAddUser)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmUsuarios"
-        Me.Text = "frmUsuarios"
+        Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,9 +140,9 @@ Partial Class frmUsuarios
     Friend WithEvents btnDeleteUser As Button
     Friend WithEvents btnModifyUser As Button
     Friend WithEvents lvwUsers As ListView
-    Friend WithEvents document As ColumnHeader
+    Friend WithEvents email As ColumnHeader
     Friend WithEvents user As ColumnHeader
-    Friend WithEvents password As ColumnHeader
     Friend WithEvents btnBack As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents password As ColumnHeader
 End Class

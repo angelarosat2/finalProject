@@ -50,6 +50,11 @@ Public NotInheritable Class DBConn
 
     End Function
 
+    Public Function AMDStatement(sqlCmd As SqlCommand) As Integer
+        OpenConnection()
+        sqlCmd.Connection = myConn
+        Return sqlCmd.ExecuteNonQuery()
+    End Function
 
     Public Sub OpenConnection()
         If myConn.State = ConnectionState.Closed Then

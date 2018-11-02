@@ -30,6 +30,31 @@ Public Class Generica
         Return DBConn.Instance.InsertStatement(sqlCmd)
     End Function
 
+    Public Overridable Function editar(pk_name As String, pk_value As String) As Integer
+        Dim conn As DBConn = DBConn.Instance()
+
+        Dim consulta_update As String = "UPDATE " & nomTabla & " SET "
+        Dim update_string As String = ""
+
+        For index = 0 To atributosInsert.Length - 1
+            Dim atributo As String = atributosInsert(index)
+            update_string += atributo & " = " & "@" & atributo
+            If Not atributo = atributosInsert.Last Then
+                update_string += ", "
+            End If
+        Next
+
+        consulta_update += update_string & " WHERE " & pk_name & "=" & "'" & pk_value & "'"
+        Dim insert As New SqlCommand(consulta_update)
+
+        For Each atributo In atributosInsert
+            Dim pInfo As System.Reflection.PropertyInfo = Me.GetType().GetProperty(atributo)
+            insert.Parameters.AddWithValue("@" & atributo, pInfo.GetValue(Me, Reflection.BindingFlags.GetProperty, Nothing, Nothing, Nothing))
+        Next
+
+        Return conn.AMDStatement(insert)
+    End Function
+
     Public Overridable Function ObtenerListado()
         Return DBConn.Instance.SelectStatement("SELECT * FROM " + nomTabla)
     End Function

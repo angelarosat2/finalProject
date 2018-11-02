@@ -29,11 +29,9 @@ Partial Class frmModifyUser
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUser = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtDocument = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label5
@@ -97,14 +95,6 @@ Partial Class frmModifyUser
         Me.txtEmail.Size = New System.Drawing.Size(167, 29)
         Me.txtEmail.TabIndex = 2
         '
-        'txtDocument
-        '
-        Me.txtDocument.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDocument.Location = New System.Drawing.Point(186, 114)
-        Me.txtDocument.Name = "txtDocument"
-        Me.txtDocument.Size = New System.Drawing.Size(167, 29)
-        Me.txtDocument.TabIndex = 1
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -135,16 +125,6 @@ Partial Class frmModifyUser
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Email"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(73, 115)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 25)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Document"
-        '
         'frmModifyUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -157,11 +137,9 @@ Partial Class frmModifyUser
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUser)
         Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtDocument)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmModifyUser"
         Me.Text = "frmModifyUser"
@@ -176,9 +154,7 @@ Partial Class frmModifyUser
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUser As TextBox
     Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtDocument As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label1 As Label
 End Class
