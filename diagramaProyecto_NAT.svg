@@ -423,8 +423,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70000002"
-     inkscape:cx="218.16192"
-     inkscape:cy="472.01157"
+     inkscape:cx="1600.2025"
+     inkscape:cy="1422.9324"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -450,7 +450,11 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g1221">
+       id="g1221"
+       transform="matrix(1.5245988,0,0,1.5245988,-92.279364,-106.44136)"
+       inkscape:export-filename="C:\Users\Renzo\Desktop\Fernanda\g1221.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path4140"
